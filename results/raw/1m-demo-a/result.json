@@ -1,0 +1,46 @@
+{
+  "row": {
+    "phase": "phase1",
+    "scale": "1M",
+    "workload": "demo-a-hotkey",
+    "run_type": "demo",
+    "target_rate": "",
+    "total_qps": "1719.809",
+    "read_qps": "1547.972",
+    "write_qps": "171.837",
+    "p50": "6.949",
+    "p95": "155.464",
+    "p99": "280.073",
+    "error_rate": "0.000000",
+    "pass_fail": "demo",
+    "avg_cpu": "97.592",
+    "avg_iowait": "0.000",
+    "avg_steal": "2.108",
+    "cache_hit_ratio": "0.999999",
+    "invalid": "no",
+    "run_id": "1m-demo-a",
+    "loadgen_cpu": "0.993",
+    "notes": "disk_util 5.27 await_ms 0.45725"
+  },
+  "passed": false,
+  "invalid": false,
+  "rate": null,
+  "total_qps": 1719.809001,
+  "io": {
+    "util": 5.271,
+    "await_ms": 0.45725,
+    "samples": 120
+  },
+  "vm": {
+    "cpu": 97.59166666666667,
+    "iowait": 0.0,
+    "steal": 2.1083333333333334,
+    "samples": 120
+  },
+  "hit_ratio": 0.9999994069078192,
+  "p95": 155.464,
+  "p99": 280.073,
+  "error_rate": 0.0,
+  "summary_tail": " - number of transactions actually processed: 465059 (tps = 774.958195)\n - number of failed transactions: 0 (0.000%)\n - latency average = 6.785 ms\n - latency stddev = 7.838 ms\nSQL script 2: /opt/pg-limit/sql/open_post.sql\n - weight: 45 (targets 45.0% of total)\n - 463208 transactions (44.9% of total)\n - number of transactions actually processed: 463208 (tps = 771.873753)\n - number of failed transactions: 0 (0.000%)\n - latency average = 54.307 ms\n - latency stddev = 75.733 ms\nSQL script 3: /opt/pg-limit/sql/like.sql\n - weight: 8 (targets 8.0% of total)\n - 82606 transactions (8.0% of total)\n - number of transactions actually processed: 82606 (tps = 137.651775)\n - number of failed transactions: 0 (0.000%)\n - latency average = 16.219 ms\n - latency stddev = 11.410 ms\nSQL script 4: /opt/pg-limit/sql/new_post.sql\n - weight: 2 (targets 2.0% of total)\n - 20453 transactions (2.0% of total)\n - number of transactions actually processed: 20453 (tps = 34.082170)\n - number of failed transactions: 0 (0.000%)\n - latency average = 16.821 ms\n - latency stddev = 10.989 ms",
+  "intervals": 60
+}

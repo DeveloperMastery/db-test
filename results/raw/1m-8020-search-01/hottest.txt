@@ -1,0 +1,10 @@
+before
+max=22 tied=1
+825988 like_count=22 likes_rows=22
+872660 like_count=21 likes_rows=21
+939172 like_count=20 likes_rows=20
+after
+max=23 tied=1
+825988 like_count=23 likes_rows=23
+872660 like_count=22 likes_rows=22
+820364 like_count=22 likes_rows=22

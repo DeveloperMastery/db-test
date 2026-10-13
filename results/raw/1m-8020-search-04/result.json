@@ -1,0 +1,46 @@
+{
+  "row": {
+    "phase": "phase1",
+    "scale": "1M",
+    "workload": "mixed-8020",
+    "run_type": "search",
+    "target_rate": 15311,
+    "total_qps": "14621.998",
+    "read_qps": "13158.281",
+    "write_qps": "1463.717",
+    "p50": "2.069",
+    "p95": "12334.629",
+    "p99": "13744.665",
+    "error_rate": "0.000000",
+    "pass_fail": "invalid",
+    "avg_cpu": "75.917",
+    "avg_iowait": "1.667",
+    "avg_steal": "6.250",
+    "cache_hit_ratio": "1.000000",
+    "invalid": "yes",
+    "run_id": "1m-8020-search-04",
+    "loadgen_cpu": "11.085",
+    "notes": "steal 6.25% > 5; disk_util 33.50 await_ms 0.4533333333333333"
+  },
+  "passed": false,
+  "invalid": true,
+  "rate": 15311,
+  "total_qps": 14621.997862,
+  "io": {
+    "util": 33.50416666666667,
+    "await_ms": 0.4533333333333333,
+    "samples": 24
+  },
+  "vm": {
+    "cpu": 75.91666666666667,
+    "iowait": 1.6666666666666667,
+    "steal": 6.25,
+    "samples": 24
+  },
+  "hit_ratio": 1.0,
+  "p95": 12334.629,
+  "p99": 13744.665,
+  "error_rate": 0.0,
+  "summary_tail": " - number of transactions actually processed: 788385 (tps = 6577.701423)\n - number of failed transactions: 0 (0.000%)\n - latency average = 991.276 ms\n - latency stddev = 1904.266 ms\nSQL script 2: /opt/pg-limit/sql/open_post.sql\n - weight: 45 (targets 45.0% of total)\n - 786939 transactions (44.9% of total)\n - number of transactions actually processed: 786939 (tps = 6565.637069)\n - number of failed transactions: 0 (0.000%)\n - latency average = 997.046 ms\n - latency stddev = 1909.901 ms\nSQL script 3: /opt/pg-limit/sql/like.sql\n - weight: 8 (targets 8.0% of total)\n - 140474 transactions (8.0% of total)\n - number of transactions actually processed: 140474 (tps = 1172.011174)\n - number of failed transactions: 0 (0.000%)\n - latency average = 997.977 ms\n - latency stddev = 1904.534 ms\nSQL script 4: /opt/pg-limit/sql/new_post.sql\n - weight: 2 (targets 2.0% of total)\n - 34820 transactions (2.0% of total)\n - number of transactions actually processed: 34820 (tps = 290.512330)\n - number of failed transactions: 0 (0.000%)\n - latency average = 978.325 ms\n - latency stddev = 1886.341 ms",
+  "intervals": 12
+}

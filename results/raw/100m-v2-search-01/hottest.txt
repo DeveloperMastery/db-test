@@ -1,0 +1,10 @@
+before
+max=6 tied=3
+98933611 like_count=6 likes_rows=6
+90417840 like_count=6 likes_rows=6
+86161438 like_count=6 likes_rows=6
+after
+max=6 tied=3
+98933611 like_count=6 likes_rows=6
+90417840 like_count=6 likes_rows=6
+86161438 like_count=6 likes_rows=6

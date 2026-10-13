@@ -1,0 +1,330 @@
+{
+  "ceiling_qps": 22271.910127,
+  "ceiling": {
+    "phase": "phase1",
+    "scale": "1M",
+    "workload": "mixed-8020",
+    "run_type": "ceiling",
+    "target_rate": "",
+    "total_qps": "22271.910",
+    "read_qps": "20038.949",
+    "write_qps": "2232.961",
+    "p50": "1.502",
+    "p95": "7.228",
+    "p99": "11.239",
+    "error_rate": "0.000000",
+    "pass_fail": "pass",
+    "avg_cpu": "93.000",
+    "avg_iowait": "0.167",
+    "avg_steal": "1.625",
+    "cache_hit_ratio": "1.000000",
+    "invalid": "no",
+    "run_id": "1m-8020-ceiling",
+    "loadgen_cpu": "13.746",
+    "notes": "disk_util 21.76 await_ms 0.34833333333333333"
+  },
+  "candidate_rate": 13919,
+  "candidate": {
+    "phase": "phase1",
+    "scale": "1M",
+    "workload": "mixed-8020",
+    "run_type": "search",
+    "target_rate": 13919,
+    "total_qps": "13919.087",
+    "read_qps": "12523.460",
+    "write_qps": "1395.628",
+    "p50": "0.733",
+    "p95": "3.480",
+    "p99": "27.038",
+    "error_rate": "0.000000",
+    "pass_fail": "pass",
+    "avg_cpu": "72.458",
+    "avg_iowait": "1.958",
+    "avg_steal": "0.833",
+    "cache_hit_ratio": "1.000000",
+    "invalid": "no",
+    "run_id": "1m-8020-search-03",
+    "loadgen_cpu": "11.007",
+    "notes": "disk_util 31.26 await_ms 0.2004166666666667"
+  },
+  "confirmed_rate": 13919,
+  "confirms": [],
+  "attempts": [
+    {
+      "rate": 13919,
+      "passed": true,
+      "rows": [
+        {
+          "phase": "phase1",
+          "scale": "1M",
+          "workload": "mixed-8020",
+          "run_type": "confirm",
+          "target_rate": 13919,
+          "total_qps": "13915.003",
+          "read_qps": "12525.234",
+          "write_qps": "1389.768",
+          "p50": "0.825",
+          "p95": "5.971",
+          "p99": "278.075",
+          "error_rate": "0.000000",
+          "pass_fail": "pass",
+          "avg_cpu": "76.000",
+          "avg_iowait": "1.917",
+          "avg_steal": "1.267",
+          "cache_hit_ratio": "1.000000",
+          "invalid": "no",
+          "run_id": "1m-8020-confirm-r13919-1",
+          "loadgen_cpu": "10.552",
+          "notes": "disk_util 31.72 await_ms 0.226"
+        },
+        {
+          "phase": "phase1",
+          "scale": "1M",
+          "workload": "mixed-8020",
+          "run_type": "confirm",
+          "target_rate": 13919,
+          "total_qps": "13917.266",
+          "read_qps": "12526.723",
+          "write_qps": "1390.543",
+          "p50": "0.835",
+          "p95": "6.284",
+          "p99": "47.286",
+          "error_rate": "0.000000",
+          "pass_fail": "pass",
+          "avg_cpu": "75.450",
+          "avg_iowait": "1.983",
+          "avg_steal": "1.517",
+          "cache_hit_ratio": "1.000000",
+          "invalid": "no",
+          "run_id": "1m-8020-confirm-r13919-2",
+          "loadgen_cpu": "10.404",
+          "notes": "disk_util 31.93 await_ms 0.21866666666666665"
+        },
+        {
+          "phase": "phase1",
+          "scale": "1M",
+          "workload": "mixed-8020",
+          "run_type": "confirm",
+          "target_rate": 13919,
+          "total_qps": "13916.086",
+          "read_qps": "12522.119",
+          "write_qps": "1393.967",
+          "p50": "0.750",
+          "p95": "3.358",
+          "p99": "17.053",
+          "error_rate": "0.000000",
+          "pass_fail": "pass",
+          "avg_cpu": "74.550",
+          "avg_iowait": "1.933",
+          "avg_steal": "0.750",
+          "cache_hit_ratio": "1.000000",
+          "invalid": "no",
+          "run_id": "1m-8020-confirm-r13919-3",
+          "loadgen_cpu": "10.484",
+          "notes": "disk_util 30.69 await_ms 0.19116666666666668"
+        }
+      ]
+    }
+  ],
+  "search_failures": [
+    {
+      "phase": "phase1",
+      "scale": "1M",
+      "workload": "mixed-8020",
+      "run_type": "search",
+      "target_rate": 16703,
+      "total_qps": "16694.639",
+      "read_qps": "15028.318",
+      "write_qps": "1666.321",
+      "p50": "1.366",
+      "p95": "413.747",
+      "p99": "926.745",
+      "error_rate": "0.000000",
+      "pass_fail": "fail",
+      "avg_cpu": "83.542",
+      "avg_iowait": "0.958",
+      "avg_steal": "2.375",
+      "cache_hit_ratio": "1.000000",
+      "invalid": "no",
+      "run_id": "1m-8020-search-02",
+      "loadgen_cpu": "12.490",
+      "notes": "disk_util 31.42 await_ms 0.31625"
+    },
+    {
+      "phase": "phase1",
+      "scale": "1M",
+      "workload": "mixed-8020",
+      "run_type": "search",
+      "target_rate": 15311,
+      "total_qps": "15297.273",
+      "read_qps": "13767.817",
+      "write_qps": "1529.455",
+      "p50": "1.185",
+      "p95": "800.382",
+      "p99": "1558.853",
+      "error_rate": "0.000000",
+      "pass_fail": "fail",
+      "avg_cpu": "79.583",
+      "avg_iowait": "1.458",
+      "avg_steal": "2.625",
+      "cache_hit_ratio": "1.000000",
+      "invalid": "no",
+      "run_id": "1m-8020-search-04-rerun2",
+      "loadgen_cpu": "11.977",
+      "notes": "disk_util 31.42 await_ms 0.32458333333333333"
+    },
+    {
+      "phase": "phase1",
+      "scale": "1M",
+      "workload": "mixed-8020",
+      "run_type": "search",
+      "target_rate": 14615,
+      "total_qps": "14605.147",
+      "read_qps": "13141.402",
+      "write_qps": "1463.745",
+      "p50": "0.799",
+      "p95": "11.728",
+      "p99": "921.925",
+      "error_rate": "0.000000",
+      "pass_fail": "fail",
+      "avg_cpu": "75.500",
+      "avg_iowait": "1.875",
+      "avg_steal": "0.875",
+      "cache_hit_ratio": "1.000000",
+      "invalid": "no",
+      "run_id": "1m-8020-search-05",
+      "loadgen_cpu": "11.682",
+      "notes": "disk_util 31.32 await_ms 0.21"
+    }
+  ],
+  "stopped_reason": null,
+  "drift": [
+    {
+      "run_id": "1m-8020-search-03",
+      "means": {
+        "open_post": {
+          "calls": 751340,
+          "mean_ms": 0.030679534624787435,
+          "query": "SELECT p.id, p.body, p.created_at, p.like_count FROM posts p WHERE p.id = $1"
+        },
+        "profile": {
+          "calls": 749956,
+          "mean_ms": 0.10255756397045195,
+          "query": "SELECT p.id, p.body, p.created_at, p.like_count FROM posts p WHERE p.user_id = $1 ORDER BY p.created_at DESC LIMIT $2"
+        },
+        "like_write": {
+          "calls": 133763,
+          "mean_ms": 0.12613408553154756,
+          "query": "WITH inserted AS ( INSERT INTO likes (post_id, user_id, created_at) VALUES ($1, $2, now()) ON CONFLICT DO NOTHING RETURNING post_id ) UPDATE posts AS p SET like_count = p.like_count + $3 FROM inserted AS i WHERE p.id = i.post_id"
+        },
+        "new_post": {
+          "calls": 33543,
+          "mean_ms": 0.07560088733865229,
+          "query": "INSERT INTO posts (user_id, body, created_at) VALUES ($1, repeat($3, $2), now())"
+        },
+        "other": {
+          "calls": 24,
+          "mean_ms": 0.926294291666674,
+          "query": "SELECT extract($1 FROM now())::bigint, coalesce(wait_event_type, $2), coalesce(wait_event, $3), count(*) FROM pg_stat_activity WHERE datname = $4 AND state = $5 AND pid <> pg_backend_pid() GROUP BY 1, 2, 3"
+        }
+      },
+      "hottest": "before\nmax=23 tied=3\n979564 like_count=23 likes_rows=23\n872660 like_count=23 likes_rows=23\n825988 like_count=23 likes_rows=23\nafter\nmax=24 tied=2\n970780 like_count=24 likes_rows=24\n845039 like_count=24 likes_rows=24\n979564 like_count=23 likes_rows=23\n"
+    },
+    {
+      "run_id": "1m-8020-confirm-r13919-1",
+      "means": {
+        "profile": {
+          "calls": 1878971,
+          "mean_ms": 0.10564481238564127,
+          "query": "SELECT p.id, p.body, p.created_at, p.like_count FROM posts p WHERE p.user_id = $1 ORDER BY p.created_at DESC LIMIT $2"
+        },
+        "open_post": {
+          "calls": 1877216,
+          "mean_ms": 0.03256676713605258,
+          "query": "SELECT p.id, p.body, p.created_at, p.like_count FROM posts p WHERE p.id = $1"
+        },
+        "like_write": {
+          "calls": 333297,
+          "mean_ms": 0.16477479270693032,
+          "query": "WITH inserted AS ( INSERT INTO likes (post_id, user_id, created_at) VALUES ($1, $2, now()) ON CONFLICT DO NOTHING RETURNING post_id ) UPDATE posts AS p SET like_count = p.like_count + $3 FROM inserted AS i WHERE p.id = i.post_id"
+        },
+        "new_post": {
+          "calls": 83480,
+          "mean_ms": 0.10286891911835061,
+          "query": "INSERT INTO posts (user_id, body, created_at) VALUES ($1, repeat($3, $2), now())"
+        },
+        "other": {
+          "calls": 59,
+          "mean_ms": 1.0135828474576132,
+          "query": "SELECT extract($1 FROM now())::bigint, coalesce(wait_event_type, $2), coalesce(wait_event, $3), count(*) FROM pg_stat_activity WHERE datname = $4 AND state = $5 AND pid <> pg_backend_pid() GROUP BY 1, 2, 3"
+        }
+      },
+      "hottest": "before\nmax=28 tied=4\n983577 like_count=28 likes_rows=28\n970780 like_count=28 likes_rows=28\n845039 like_count=28 likes_rows=28\nafter\nmax=31 tied=1\n970780 like_count=31 likes_rows=31\n946536 like_count=30 likes_rows=30\n983577 like_count=29 likes_rows=29\n"
+    },
+    {
+      "run_id": "1m-8020-confirm-r13919-2",
+      "means": {
+        "open_post": {
+          "calls": 1879603,
+          "mean_ms": 0.03305449049241878,
+          "query": "SELECT p.id, p.body, p.created_at, p.like_count FROM posts p WHERE p.id = $1"
+        },
+        "profile": {
+          "calls": 1876999,
+          "mean_ms": 0.10614593108043531,
+          "query": "SELECT p.id, p.body, p.created_at, p.like_count FROM posts p WHERE p.user_id = $1 ORDER BY p.created_at DESC LIMIT $2"
+        },
+        "like_write": {
+          "calls": 333589,
+          "mean_ms": 0.1158845738475665,
+          "query": "WITH inserted AS ( INSERT INTO likes (post_id, user_id, created_at) VALUES ($1, $2, now()) ON CONFLICT DO NOTHING RETURNING post_id ) UPDATE posts AS p SET like_count = p.like_count + $3 FROM inserted AS i WHERE p.id = i.post_id"
+        },
+        "new_post": {
+          "calls": 83417,
+          "mean_ms": 0.0759535117062305,
+          "query": "INSERT INTO posts (user_id, body, created_at) VALUES ($1, repeat($3, $2), now())"
+        },
+        "other": {
+          "calls": 60,
+          "mean_ms": 0.9424470666666631,
+          "query": "SELECT extract($1 FROM now())::bigint, coalesce(wait_event_type, $2), coalesce(wait_event, $3), count(*) FROM pg_stat_activity WHERE datname = $4 AND state = $5 AND pid <> pg_backend_pid() GROUP BY 1, 2, 3"
+        }
+      },
+      "hottest": "before\nmax=31 tied=1\n970780 like_count=31 likes_rows=31\n946536 like_count=30 likes_rows=30\n983577 like_count=29 likes_rows=29\nafter\nmax=32 tied=3\n973706 like_count=32 likes_rows=32\n970780 like_count=32 likes_rows=32\n946536 like_count=32 likes_rows=32\n"
+    },
+    {
+      "run_id": "1m-8020-confirm-r13919-3",
+      "means": {
+        "open_post": {
+          "calls": 1878047,
+          "mean_ms": 0.03184450455821214,
+          "query": "SELECT p.id, p.body, p.created_at, p.like_count FROM posts p WHERE p.id = $1"
+        },
+        "profile": {
+          "calls": 1876953,
+          "mean_ms": 0.1021251290252545,
+          "query": "SELECT p.id, p.body, p.created_at, p.like_count FROM posts p WHERE p.user_id = $1 ORDER BY p.created_at DESC LIMIT $2"
+        },
+        "like_write": {
+          "calls": 334726,
+          "mean_ms": 0.15480247975636688,
+          "query": "WITH inserted AS ( INSERT INTO likes (post_id, user_id, created_at) VALUES ($1, $2, now()) ON CONFLICT DO NOTHING RETURNING post_id ) UPDATE posts AS p SET like_count = p.like_count + $3 FROM inserted AS i WHERE p.id = i.post_id"
+        },
+        "new_post": {
+          "calls": 83282,
+          "mean_ms": 0.0959098325808708,
+          "query": "INSERT INTO posts (user_id, body, created_at) VALUES ($1, repeat($3, $2), now())"
+        },
+        "other": {
+          "calls": 60,
+          "mean_ms": 1.1680774333333375,
+          "query": "SELECT extract($1 FROM now())::bigint, coalesce(wait_event_type, $2), coalesce(wait_event, $3), count(*) FROM pg_stat_activity WHERE datname = $4 AND state = $5 AND pid <> pg_backend_pid() GROUP BY 1, 2, 3"
+        }
+      },
+      "hottest": "before\nmax=32 tied=3\n973706 like_count=32 likes_rows=32\n970780 like_count=32 likes_rows=32\n946536 like_count=32 likes_rows=32\nafter\nmax=34 tied=1\n973706 like_count=34 likes_rows=34\n970780 like_count=33 likes_rows=33\n864904 like_count=33 likes_rows=33\n"
+    }
+  ],
+  "end_db_bytes": 1034507967,
+  "end_wal_bytes": 1358954496,
+  "end_counts": "users|100000\nposts|1795802\nlikes|5179455"
+}

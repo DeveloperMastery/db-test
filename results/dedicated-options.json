@@ -1,0 +1,75 @@
+{
+  "need_gib": 96.72901851013303,
+  "options": [
+    {
+      "slug": "s-4vcpu-8gb",
+      "description": "Basic",
+      "disk_gib": 160,
+      "usable_gib": 144.0,
+      "price_hourly": 0.07143,
+      "price_monthly": 48,
+      "dedicated": false,
+      "fits": false
+    },
+    {
+      "slug": "s-4vcpu-8gb-amd",
+      "description": "Basic AMD",
+      "disk_gib": 160,
+      "usable_gib": 144.0,
+      "price_hourly": 0.08333,
+      "price_monthly": 56,
+      "dedicated": false,
+      "fits": false
+    },
+    {
+      "slug": "s-4vcpu-8gb-intel",
+      "description": "Basic Intel",
+      "disk_gib": 160,
+      "usable_gib": 144.0,
+      "price_hourly": 0.08333,
+      "price_monthly": 56,
+      "dedicated": false,
+      "fits": false
+    },
+    {
+      "slug": "s-4vcpu-8gb-240gb-intel",
+      "description": "Basic Intel",
+      "disk_gib": 240,
+      "usable_gib": 216.0,
+      "price_hourly": 0.09524,
+      "price_monthly": 64,
+      "dedicated": false,
+      "fits": false
+    },
+    {
+      "slug": "c-4",
+      "description": "CPU-Optimized",
+      "disk_gib": 50,
+      "usable_gib": 45.0,
+      "price_hourly": 0.125,
+      "price_monthly": 84,
+      "dedicated": true,
+      "fits": false
+    },
+    {
+      "slug": "c2-4vcpu-8gb",
+      "description": "CPU-Optimized 2x SSD",
+      "disk_gib": 100,
+      "usable_gib": 90.0,
+      "price_hourly": 0.13988,
+      "price_monthly": 94,
+      "dedicated": true,
+      "fits": false
+    },
+    {
+      "slug": "c5-4vcpu-8gb",
+      "description": "CPU Intensive 5x SSD",
+      "disk_gib": 250,
+      "usable_gib": 225.0,
+      "price_hourly": 0.18452,
+      "price_monthly": 124,
+      "dedicated": true,
+      "fits": true
+    }
+  ]
+}

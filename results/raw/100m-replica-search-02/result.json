@@ -1,0 +1,43 @@
+{
+  "row": {
+    "phase": "phase2",
+    "scale": "100M",
+    "workload": "mixed-8020-replica",
+    "run_type": "search",
+    "target_rate": 3992,
+    "total_qps": "3982.333",
+    "read_qps": "3584.558",
+    "write_qps": "397.775",
+    "p50": "0.943",
+    "p95": "3.623",
+    "p99": "27.320",
+    "error_rate": "0.000000",
+    "pass_fail": "pass",
+    "avg_cpu": "8.581",
+    "avg_iowait": "15.194",
+    "avg_steal": "0.031",
+    "cache_hit_ratio": "0.633203",
+    "invalid": "no",
+    "run_id": "100m-replica-search-02",
+    "loadgen_cpu": "2.918",
+    "notes": "read_rate 3593; write_rate 399; clients 50+50; jobs 8+8; replay_lag_median_s 0.001 replay_lag_max_s 0.026 write_lag_max_s 0.005 flush_lag_max_s 0.015 lag_n 31; loadgen_core_max 4.67; pgbench_thread_max 2.41; exec_p99 15.995; ramp_30s_p99 9.409 ramp_exec_p99 8.375; primary_disk_util 39.27; replica_disk_util 52.16; primary_hit 0.890585; primary_cpu 8.58 primary_iowait 15.19; replica_cpu 24.19 replica_iowait 26.97"
+  },
+  "passed": true,
+  "invalid": false,
+  "rate": 3992,
+  "total_qps": 3982.3333333333335,
+  "read_qps": 3584.5583333333334,
+  "write_qps": 397.775,
+  "p95": 3.623,
+  "p99": 27.32,
+  "error_rate": 0.0,
+  "hit_ratio": 0.6332030772499877,
+  "lag": {
+    "n": 31,
+    "replay_median": 0.001347,
+    "replay_max": 0.026396,
+    "write_max": 0.004953,
+    "flush_max": 0.014927
+  },
+  "exec_p99": 15.995
+}

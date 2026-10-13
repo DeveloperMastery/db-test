@@ -1,0 +1,10 @@
+.env
+infra/id_ed25519
+infra/id_ed25519.pub
+infra/db.pass
+infra/repl.pass
+infra/bin/
+__pycache__/
+*.pyc
+.DS_Store
+results/**/txlog*

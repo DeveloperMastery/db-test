@@ -1,0 +1,10 @@
+before
+max=56 tied=3
+973886 like_count=56 likes_rows=56
+900521 like_count=56 likes_rows=56
+872872 like_count=56 likes_rows=56
+after
+max=60 tied=1
+856677 like_count=60 likes_rows=60
+906887 like_count=59 likes_rows=59
+872872 like_count=59 likes_rows=59

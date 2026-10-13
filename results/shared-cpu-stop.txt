@@ -1,0 +1,11 @@
+The time-only 1M search on the shared-CPU droplet was stopped before any rate could be confirmed.
+Every captured run was invalid because database CPU steal averaged above 5%.
+Latency and load-generator CPU were inside the limits.
+
+1m-v2-warmup: steal 8.542%, p95 8.891 ms, p99 14.969 ms, core max 21.645%, thread max 9.602%
+1m-v2-ceiling: steal 5.583%, p95 8.645 ms, p99 13.767 ms, core max 23.468%, thread max 10.291%
+1m-v2-ceiling-rerun2: steal 5.167%, p95 8.919 ms, p99 14.835 ms, core max 23.688%, thread max 9.891%
+1m-v2-search-01 at offered 9136: steal 7.700%, p95 7.614 ms, p99 65.696 ms, exec p99 11.987 ms, core max 12.240%, thread max 5.886%
+1m-v2-search-01-rerun2 at offered 9136: steal 8.900%, p95 11.296 ms, p99 144.604 ms, exec p99 8.824 ms, core max 12.163%, thread max 5.729%
+
+A third search attempt was running when this was stopped. It is not a result.

@@ -1,0 +1,19 @@
+{
+  "samples": 116,
+  "samples_with_lock_wait": 72,
+  "samples_with_blocked": 70,
+  "samples_with_ungranted_posts": 28,
+  "samples_with_ungranted_likes": 0,
+  "max_lock_waits": 35,
+  "max_blocked": 38,
+  "max_ungranted_posts": 19,
+  "max_ungranted_likes": 0,
+  "max_lockevent_waiters": {
+    "transactionid": 35,
+    "tuple": 10
+  },
+  "ungranted_rows": {
+    "posts": 81,
+    "likes": 0
+  }
+}

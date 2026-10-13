@@ -1,0 +1,45 @@
+label 1m-demo-a
+like_count_column absent
+COPY
+users 1..100000
+users_seconds 0.517
+posts 1..1000000
+posts_seconds 5.552
+likes for posts 1..1000000
+likes_seconds 4.642
+load_done
+BACKFILL
+
+INDEX
+Timing is on.
+ALTER TABLE
+Time: 127.689 ms
+ALTER TABLE
+Time: 1269.201 ms (00:01.269)
+ALTER TABLE
+Time: 2080.695 ms (00:02.081)
+CREATE INDEX
+Time: 1192.994 ms (00:01.193)
+ setval  
+---------
+ 1000000
+(1 row)
+
+Time: 2.266 ms
+VACUUM
+Time: 596.863 ms
+CHECKPOINT
+Time: 495.698 ms
+COUNTS
+users|100000
+likes|2000000
+posts|1000000
+body_lengths 80,200
+identity_last 1000000
+SIZES
+likes,104726528,63062016,167845888
+posts,201981952,54050816,256122880
+users,6160384,2260992,8462336
+database,440448703
+wal_bytes 318767104
+size_vs_ram 0.051275

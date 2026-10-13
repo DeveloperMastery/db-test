@@ -1,0 +1,76 @@
+pgbench (18.6 (Ubuntu 18.6-1.pgdg26.04+2))
+progress: 10.0 s, 7636.8 tps, lat 304.901 ms stddev 380.186, 0 failed, lag 299.076 ms
+progress: 20.0 s, 9253.5 tps, lat 452.939 ms stddev 520.109, 0 failed, lag 448.818 ms
+progress: 30.0 s, 8508.4 tps, lat 4.654 ms stddev 9.990, 0 failed, lag 2.061 ms
+progress: 40.0 s, 8529.2 tps, lat 3.850 ms stddev 5.481, 0 failed, lag 1.113 ms
+progress: 50.0 s, 8518.1 tps, lat 7.974 ms stddev 16.625, 0 failed, lag 5.115 ms
+progress: 60.0 s, 8435.3 tps, lat 3.299 ms stddev 4.311, 0 failed, lag 0.643 ms
+progress: 70.0 s, 8559.3 tps, lat 3.690 ms stddev 5.463, 0 failed, lag 1.032 ms
+progress: 80.0 s, 8497.0 tps, lat 4.183 ms stddev 6.950, 0 failed, lag 1.450 ms
+progress: 90.0 s, 8508.0 tps, lat 4.032 ms stddev 6.531, 0 failed, lag 1.307 ms
+progress: 100.0 s, 8499.5 tps, lat 6.489 ms stddev 12.331, 0 failed, lag 3.677 ms
+progress: 110.0 s, 8575.5 tps, lat 3.606 ms stddev 5.013, 0 failed, lag 0.897 ms
+progress: 120.0 s, 8461.6 tps, lat 3.659 ms stddev 5.087, 0 failed, lag 0.921 ms
+progress: 130.0 s, 8518.4 tps, lat 3.627 ms stddev 5.399, 0 failed, lag 0.979 ms
+progress: 140.0 s, 8497.4 tps, lat 3.546 ms stddev 5.098, 0 failed, lag 0.898 ms
+progress: 150.0 s, 8526.8 tps, lat 22.698 ms stddev 37.327, 0 failed, lag 18.900 ms
+progress: 160.0 s, 8489.0 tps, lat 7.743 ms stddev 13.224, 0 failed, lag 4.568 ms
+progress: 170.0 s, 8490.3 tps, lat 3.797 ms stddev 5.611, 0 failed, lag 1.012 ms
+progress: 180.0 s, 8520.2 tps, lat 3.478 ms stddev 5.025, 0 failed, lag 0.859 ms
+progress: 190.0 s, 8520.9 tps, lat 4.521 ms stddev 9.083, 0 failed, lag 1.844 ms
+progress: 200.0 s, 8478.4 tps, lat 4.026 ms stddev 7.179, 0 failed, lag 1.374 ms
+progress: 210.0 s, 8519.3 tps, lat 3.343 ms stddev 4.538, 0 failed, lag 0.713 ms
+progress: 220.0 s, 8498.1 tps, lat 4.019 ms stddev 7.729, 0 failed, lag 1.415 ms
+progress: 230.0 s, 8532.9 tps, lat 3.232 ms stddev 4.339, 0 failed, lag 0.695 ms
+progress: 240.0 s, 8539.2 tps, lat 5.513 ms stddev 12.518, 0 failed, lag 2.736 ms
+progress: 250.0 s, 8487.1 tps, lat 4.181 ms stddev 7.172, 0 failed, lag 1.479 ms
+progress: 260.0 s, 8512.6 tps, lat 3.769 ms stddev 6.254, 0 failed, lag 1.189 ms
+progress: 270.0 s, 8501.7 tps, lat 3.706 ms stddev 5.681, 0 failed, lag 1.038 ms
+progress: 280.0 s, 8506.3 tps, lat 3.553 ms stddev 5.001, 0 failed, lag 0.886 ms
+progress: 290.0 s, 8529.7 tps, lat 3.482 ms stddev 5.040, 0 failed, lag 0.837 ms
+progress: 300.0 s, 8505.1 tps, lat 5.334 ms stddev 13.643, 0 failed, lag 2.710 ms
+progress: 310.0 s, 8526.8 tps, lat 3.653 ms stddev 5.717, 0 failed, lag 1.025 ms
+progress: 320.0 s, 8459.0 tps, lat 3.844 ms stddev 6.269, 0 failed, lag 1.171 ms
+progress: 330.0 s, 8499.4 tps, lat 4.712 ms stddev 9.656, 0 failed, lag 2.003 ms
+transaction type: multiple scripts
+scaling factor: 1
+query mode: prepared
+number of clients: 50
+number of threads: 8
+maximum number of tries: 1
+duration: 330 s
+number of transactions actually processed: 2806447
+number of failed transactions: 0 (0.000%)
+latency average = 27.817 ms
+latency stddev = 146.656 ms
+rate limit schedule lag: avg 24.956 (max 1494.494) ms
+initial connection time = 169.393 ms
+tps = 8507.266053 (without initial connection time)
+SQL script 1: /opt/pg-limit/sql/profile.sql
+ - weight: 45 (targets 45.0% of total)
+ - 1261349 transactions (44.9% of total)
+ - number of transactions actually processed: 1261349 (tps = 3823.564646)
+ - number of failed transactions: 0 (0.000%)
+ - latency average = 27.825 ms
+ - latency stddev = 146.437 ms
+SQL script 2: /opt/pg-limit/sql/open_post.sql
+ - weight: 45 (targets 45.0% of total)
+ - 1263016 transactions (45.0% of total)
+ - number of transactions actually processed: 1263016 (tps = 3828.617872)
+ - number of failed transactions: 0 (0.000%)
+ - latency average = 26.441 ms
+ - latency stddev = 146.785 ms
+SQL script 3: /opt/pg-limit/sql/like.sql
+ - weight: 8 (targets 8.0% of total)
+ - 224389 transactions (8.0% of total)
+ - number of transactions actually processed: 224389 (tps = 680.197033)
+ - number of failed transactions: 0 (0.000%)
+ - latency average = 34.214 ms
+ - latency stddev = 146.692 ms
+SQL script 4: /opt/pg-limit/sql/new_post.sql
+ - weight: 2 (targets 2.0% of total)
+ - 56267 transactions (2.0% of total)
+ - number of transactions actually processed: 56267 (tps = 170.563826)
+ - number of failed transactions: 0 (0.000%)
+ - latency average = 33.375 ms
+ - latency stddev = 148.912 ms

@@ -1,0 +1,62 @@
+pgbench (18.6 (Ubuntu 18.6-1.pgdg26.04+2))
+progress: 10.0 s, 6879.5 tps, lat 0.975 ms stddev 1.761, 0 failed, lag 0.149 ms
+progress: 20.0 s, 7017.6 tps, lat 0.861 ms stddev 0.478, 0 failed, lag 0.062 ms
+progress: 30.0 s, 7092.9 tps, lat 0.957 ms stddev 0.614, 0 failed, lag 0.063 ms
+progress: 40.0 s, 7073.6 tps, lat 0.963 ms stddev 0.641, 0 failed, lag 0.063 ms
+progress: 50.0 s, 7049.2 tps, lat 0.976 ms stddev 0.670, 0 failed, lag 0.062 ms
+progress: 60.0 s, 7026.2 tps, lat 0.983 ms stddev 0.695, 0 failed, lag 0.063 ms
+progress: 70.0 s, 7034.4 tps, lat 0.918 ms stddev 0.558, 0 failed, lag 0.062 ms
+progress: 80.0 s, 7051.0 tps, lat 0.930 ms stddev 0.589, 0 failed, lag 0.063 ms
+progress: 90.0 s, 7010.6 tps, lat 0.924 ms stddev 0.668, 0 failed, lag 0.063 ms
+progress: 100.0 s, 7072.3 tps, lat 0.875 ms stddev 0.542, 0 failed, lag 0.062 ms
+progress: 110.0 s, 7060.9 tps, lat 0.894 ms stddev 0.579, 0 failed, lag 0.063 ms
+progress: 120.0 s, 7108.4 tps, lat 0.868 ms stddev 0.520, 0 failed, lag 0.062 ms
+progress: 130.0 s, 7022.5 tps, lat 0.897 ms stddev 0.587, 0 failed, lag 0.062 ms
+progress: 140.0 s, 7043.0 tps, lat 0.862 ms stddev 0.552, 0 failed, lag 0.062 ms
+progress: 150.0 s, 7049.9 tps, lat 0.878 ms stddev 0.601, 0 failed, lag 0.063 ms
+progress: 160.0 s, 7034.8 tps, lat 0.938 ms stddev 0.612, 0 failed, lag 0.062 ms
+progress: 170.0 s, 7063.4 tps, lat 0.921 ms stddev 0.596, 0 failed, lag 0.064 ms
+progress: 180.0 s, 7044.6 tps, lat 0.881 ms stddev 0.619, 0 failed, lag 0.066 ms
+progress: 190.0 s, 7042.2 tps, lat 1.014 ms stddev 1.009, 0 failed, lag 0.078 ms
+progress: 200.0 s, 7030.9 tps, lat 0.869 ms stddev 0.558, 0 failed, lag 0.063 ms
+progress: 210.0 s, 7038.4 tps, lat 0.879 ms stddev 0.532, 0 failed, lag 0.062 ms
+progress: 220.0 s, 7055.2 tps, lat 1.077 ms stddev 1.480, 0 failed, lag 0.105 ms
+progress: 230.0 s, 7065.5 tps, lat 1.008 ms stddev 0.774, 0 failed, lag 0.062 ms
+progress: 240.0 s, 7050.3 tps, lat 0.862 ms stddev 0.546, 0 failed, lag 0.064 ms
+progress: 250.0 s, 7075.3 tps, lat 0.977 ms stddev 0.730, 0 failed, lag 0.062 ms
+progress: 260.0 s, 7011.4 tps, lat 0.853 ms stddev 0.520, 0 failed, lag 0.061 ms
+progress: 270.0 s, 7096.6 tps, lat 0.965 ms stddev 0.707, 0 failed, lag 0.062 ms
+progress: 280.0 s, 7029.7 tps, lat 0.824 ms stddev 0.478, 0 failed, lag 0.062 ms
+progress: 290.0 s, 7074.9 tps, lat 0.882 ms stddev 0.670, 0 failed, lag 0.068 ms
+progress: 300.0 s, 7058.8 tps, lat 0.913 ms stddev 0.651, 0 failed, lag 0.062 ms
+progress: 310.0 s, 7035.2 tps, lat 0.852 ms stddev 0.521, 0 failed, lag 0.062 ms
+progress: 320.0 s, 7054.2 tps, lat 0.899 ms stddev 0.647, 0 failed, lag 0.062 ms
+progress: 330.0 s, 7004.7 tps, lat 0.771 ms stddev 0.413, 0 failed, lag 0.062 ms
+transaction type: multiple scripts
+scaling factor: 1
+query mode: prepared
+number of clients: 50
+number of threads: 8
+maximum number of tries: 1
+duration: 330 s
+number of transactions actually processed: 2324611
+number of failed transactions: 0 (0.000%)
+latency average = 0.914 ms
+latency stddev = 0.728 ms
+rate limit schedule lag: avg 0.067 (max 33.653) ms
+initial connection time = 174.904 ms
+tps = 7046.902031 (without initial connection time)
+SQL script 1: /opt/pg-limit/sql/profile.sql
+ - weight: 50 (targets 50.0% of total)
+ - 1162663 transactions (50.0% of total)
+ - number of transactions actually processed: 1162663 (tps = 3524.534753)
+ - number of failed transactions: 0 (0.000%)
+ - latency average = 1.112 ms
+ - latency stddev = 0.803 ms
+SQL script 2: /opt/pg-limit/sql/open_post.sql
+ - weight: 50 (targets 50.0% of total)
+ - 1161197 transactions (50.0% of total)
+ - number of transactions actually processed: 1161197 (tps = 3520.090672)
+ - number of failed transactions: 0 (0.000%)
+ - latency average = 0.716 ms
+ - latency stddev = 0.581 ms

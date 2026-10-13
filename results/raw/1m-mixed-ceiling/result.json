@@ -1,0 +1,45 @@
+{
+  "row": {
+    "phase": "phase1",
+    "scale": "1M",
+    "workload": "mixed",
+    "run_type": "ceiling",
+    "target_rate": "",
+    "total_qps": "999.193",
+    "read_qps": "898.603",
+    "write_qps": "100.590",
+    "p50": "9.504",
+    "p95": "231.866",
+    "p99": "299.448",
+    "error_rate": "0.000000",
+    "pass_fail": "fail",
+    "avg_cpu": "98.167",
+    "avg_iowait": "0.000",
+    "avg_steal": "0.125",
+    "cache_hit_ratio": "1.000000",
+    "invalid": "no",
+    "run_id": "1m-mixed-ceiling",
+    "loadgen_cpu": "0.575",
+    "notes": "disk_util 1.77 await_ms 0.305"
+  },
+  "passed": false,
+  "invalid": false,
+  "rate": null,
+  "total_qps": 999.192974,
+  "io": {
+    "util": 1.7741666666666667,
+    "await_ms": 0.305,
+    "samples": 24
+  },
+  "vm": {
+    "cpu": 98.16666666666667,
+    "iowait": 0.0,
+    "steal": 0.125,
+    "samples": 24
+  },
+  "hit_ratio": 0.999999572998375,
+  "p95": 231.866,
+  "p99": 299.448,
+  "error_rate": 0.0,
+  "summary_tail": " - number of transactions actually processed: 53978 (tps = 450.031193)\n - number of failed transactions: 0 (0.000%)\n - latency average = 7.592 ms\n - latency stddev = 8.389 ms\nSQL script 2: /opt/pg-limit/sql/open_post.sql\n - weight: 45 (targets 45.0% of total)\n - 53755 transactions (44.9% of total)\n - number of transactions actually processed: 53755 (tps = 448.171973)\n - number of failed transactions: 0 (0.000%)\n - latency average = 100.142 ms\n - latency stddev = 97.113 ms\nSQL script 3: /opt/pg-limit/sql/like.sql\n - weight: 8 (targets 8.0% of total)\n - 9652 transactions (8.1% of total)\n - number of transactions actually processed: 9652 (tps = 80.471694)\n - number of failed transactions: 0 (0.000%)\n - latency average = 16.254 ms\n - latency stddev = 11.458 ms\nSQL script 4: /opt/pg-limit/sql/new_post.sql\n - weight: 2 (targets 2.0% of total)\n - 2402 transactions (2.0% of total)\n - number of transactions actually processed: 2402 (tps = 20.026213)\n - number of failed transactions: 0 (0.000%)\n - latency average = 17.442 ms\n - latency stddev = 10.903 ms"
+}

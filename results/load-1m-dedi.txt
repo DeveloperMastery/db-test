@@ -1,0 +1,51 @@
+label 1m-dedi
+like_count_column integer
+COPY
+users 1..100000
+users_seconds 0.440
+posts 1..1000000
+posts_progress 1000000
+posts_seconds 4.785
+likes for posts 1..1000000
+likes_progress 1000000
+likes_seconds 4.156
+load_done
+BACKFILL
+Timing is on.
+SET
+Time: 0.217 ms
+UPDATE 1000000
+Time: 3119.963 ms (00:03.120)
+INDEX
+Timing is on.
+ALTER TABLE
+Time: 97.181 ms
+ALTER TABLE
+Time: 950.324 ms
+ALTER TABLE
+Time: 1672.594 ms (00:01.673)
+CREATE INDEX
+Time: 1011.111 ms (00:01.011)
+ setval  
+---------
+ 1000000
+(1 row)
+
+Time: 1.861 ms
+VACUUM
+Time: 576.281 ms
+CHECKPOINT
+Time: 1824.260 ms (00:01.824)
+COUNTS
+users|100000
+posts|1000000
+likes|2000000
+body_lengths 80,200
+identity_last 1000000
+SIZES
+likes,104726528,63062016,167845888
+posts,417374208,54050816,471572480
+users,6160384,2260992,8462336
+database,655906495
+wal_bytes 637534208
+size_vs_ram 0.076358

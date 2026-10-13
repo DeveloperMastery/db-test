@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-05T19:18:44Z",
+  "old_hourly": 0.32143,
+  "new_hourly": 0.43452,
+  "size": "c5-4vcpu-8gb",
+  "price_hourly": 0.18452,
+  "need_gib": 96.72901851013303,
+  "droplet_id": "606397622"
+}

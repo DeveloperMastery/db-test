@@ -1,0 +1,54 @@
+ALTER TABLE
+users_pkey 0.246
+ALTER TABLE
+posts_pkey 1.728
+ALTER TABLE
+likes_pkey 3.194
+CREATE INDEX
+posts_user_created_idx 1.476
+ALTER TABLE
+posts_identity 0.069
+VACUUM
+vacuum_analyze 0.861
+CHECKPOINT
+checkpoint 0.694
+ setval  
+---------
+ 1000000
+(1 row)
+
+ALTER SYSTEM
+ pg_reload_conf 
+----------------
+ t
+(1 row)
+
+    name    | setting 
+------------+---------
+ autovacuum | on
+(1 row)
+
+  rel  |  count  
+-------+---------
+ users |  100000
+ likes | 2000000
+ posts | 1000000
+(3 rows)
+
+ min_body | max_body 
+----------+----------
+       80 |      200
+(1 row)
+
+ relname | heap_bytes | index_bytes | total_bytes 
+---------+------------+-------------+-------------
+ likes   |  104726528 |    63062016 |   167845888
+ posts   |  201981952 |    54050816 |   256122880
+ users   |    6160384 |     2260992 |     8462336
+(3 rows)
+
+ db_bytes  | pretty 
+-----------+--------
+ 440424127 | 420 MB
+(1 row)
+

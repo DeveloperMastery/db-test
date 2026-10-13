@@ -1,0 +1,44 @@
+pgbench (18.6 (Ubuntu 18.6-1.pgdg26.04+2))
+progress: 10.0 s, 5263.7 tps, lat 1.256 ms stddev 2.696, 0 failed, lag 0.227 ms
+progress: 20.0 s, 5374.2 tps, lat 1.172 ms stddev 1.437, 0 failed, lag 0.079 ms
+progress: 30.0 s, 5412.8 tps, lat 1.197 ms stddev 1.763, 0 failed, lag 0.093 ms
+progress: 40.0 s, 5401.4 tps, lat 1.186 ms stddev 2.179, 0 failed, lag 0.141 ms
+progress: 50.0 s, 5341.5 tps, lat 1.160 ms stddev 1.043, 0 failed, lag 0.064 ms
+progress: 60.0 s, 5353.9 tps, lat 1.167 ms stddev 1.052, 0 failed, lag 0.065 ms
+progress: 70.0 s, 5405.3 tps, lat 1.090 ms stddev 0.956, 0 failed, lag 0.068 ms
+progress: 80.0 s, 5384.2 tps, lat 1.608 ms stddev 5.259, 0 failed, lag 0.433 ms
+progress: 90.0 s, 5387.1 tps, lat 1.154 ms stddev 0.989, 0 failed, lag 0.061 ms
+progress: 100.0 s, 5399.2 tps, lat 1.259 ms stddev 2.100, 0 failed, lag 0.124 ms
+progress: 110.0 s, 5377.6 tps, lat 1.117 ms stddev 0.967, 0 failed, lag 0.065 ms
+progress: 120.0 s, 5394.0 tps, lat 1.512 ms stddev 3.560, 0 failed, lag 0.264 ms
+progress: 130.0 s, 5401.7 tps, lat 1.227 ms stddev 1.571, 0 failed, lag 0.082 ms
+progress: 140.0 s, 5352.8 tps, lat 1.109 ms stddev 0.983, 0 failed, lag 0.066 ms
+progress: 150.0 s, 5383.7 tps, lat 1.197 ms stddev 1.146, 0 failed, lag 0.067 ms
+transaction type: multiple scripts
+scaling factor: 1
+query mode: prepared
+number of clients: 50
+number of threads: 8
+maximum number of tries: 1
+duration: 150 s
+number of transactions actually processed: 806360
+number of failed transactions: 0 (0.000%)
+latency average = 1.228 ms
+latency stddev = 2.195 ms
+rate limit schedule lag: avg 0.126 (max 90.967) ms
+initial connection time = 172.227 ms
+tps = 5380.054521 (without initial connection time)
+SQL script 1: /opt/pg-limit/sql/profile.sql
+ - weight: 50 (targets 50.0% of total)
+ - 403187 transactions (50.0% of total)
+ - number of transactions actually processed: 403187 (tps = 2690.073965)
+ - number of failed transactions: 0 (0.000%)
+ - latency average = 1.542 ms
+ - latency stddev = 2.369 ms
+SQL script 2: /opt/pg-limit/sql/open_post.sql
+ - weight: 50 (targets 50.0% of total)
+ - 402835 transactions (50.0% of total)
+ - number of transactions actually processed: 402835 (tps = 2687.725412)
+ - number of failed transactions: 0 (0.000%)
+ - latency average = 0.914 ms
+ - latency stddev = 1.954 ms

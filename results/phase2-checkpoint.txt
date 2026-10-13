@@ -1,0 +1,1 @@
+16gb-limit replica-limit replica-parked replica-streaming resized

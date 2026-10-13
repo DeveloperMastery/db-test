@@ -1,0 +1,23 @@
+kind,bucket,count
+post,1,1658
+post,2,1681
+post,3,1741
+post,4,1718
+post,5,1665
+post,6,1745
+post,7,1709
+post,8,1726
+post,9,36383
+post,10,36055
+user,1,1659
+user,2,1731
+user,3,1737
+user,4,1820
+user,5,1728
+user,6,1759
+user,7,1750
+user,8,1726
+user,9,36374
+user,10,35797
+
+# post_hot|72438|post_cold|13643|user_hot|72171|user_cold|13910|n|86081

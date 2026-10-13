@@ -1,0 +1,10 @@
+before
+max=24 tied=2
+918436 like_count=24 likes_rows=24
+879684 like_count=24 likes_rows=24
+974602 like_count=23 likes_rows=23
+after
+max=26 tied=2
+918436 like_count=26 likes_rows=26
+879684 like_count=26 likes_rows=26
+974602 like_count=25 likes_rows=25

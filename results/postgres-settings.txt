@@ -1,0 +1,18 @@
+             name             |      setting       | unit |       source       
+------------------------------+--------------------+------+--------------------
+ autovacuum                   | on                 |      | configuration file
+ checkpoint_completion_target | 0.9                |      | configuration file
+ checkpoint_timeout           | 900                | s    | configuration file
+ effective_cache_size         | 786432             | 8kB  | configuration file
+ listen_addresses             | 10.130.0.3         |      | configuration file
+ maintenance_work_mem         | 1048576            | kB   | configuration file
+ max_connections              | 200                |      | configuration file
+ max_wal_size                 | 8192               | MB   | configuration file
+ random_page_cost             | 1.1                |      | configuration file
+ shared_buffers               | 262144             | 8kB  | configuration file
+ shared_preload_libraries     | pg_stat_statements |      | configuration file
+ wal_compression              | pglz               |      | configuration file
+ wal_level                    | replica            |      | configuration file
+ work_mem                     | 16384              | kB   | configuration file
+(14 rows)
+

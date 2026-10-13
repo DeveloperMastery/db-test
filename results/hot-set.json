@@ -1,0 +1,45 @@
+{
+  "counts": {
+    "users": 10000000,
+    "posts": 105826440,
+    "likes": 223317566
+  },
+  "relations": {
+    "likes": {
+      "heap": 11661680640,
+      "indexes": 7568195584,
+      "indexes_detail": {
+        "likes_pkey": 7568195584
+      }
+    },
+    "posts": {
+      "heap": 41736904704,
+      "indexes": 6161670144,
+      "indexes_detail": {
+        "posts_pkey": 2377056256,
+        "posts_user_created_idx": 3784613888
+      }
+    },
+    "users": {
+      "heap": 602800128,
+      "indexes": 224641024,
+      "indexes_detail": {
+        "users_pkey": 224641024
+      }
+    }
+  },
+  "fractions": {
+    "posts": 0.18898868751514272,
+    "users": 0.2,
+    "likes": 0.2626486301574682,
+    "hot_likes": 58654052.8
+  },
+  "hot_bytes": {
+    "posts": 9052288794.369347,
+    "users": 165488230.4,
+    "likes": 5050700648.331267
+  },
+  "hot_total": 14268477673.100613,
+  "page_cache_8": 6442450944,
+  "page_cache_16": 12884901888
+}

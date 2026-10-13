@@ -1,0 +1,68 @@
+{
+  "mode": "adaptive",
+  "elapsed_s": 618.5395051250002,
+  "stable": true,
+  "capped": false,
+  "windows": [
+    {
+      "elapsed_s": 60.0,
+      "qps": 25239.000000000004,
+      "primary_hit": null,
+      "replica_hit": null
+    },
+    {
+      "elapsed_s": 120.0,
+      "qps": 24984.1,
+      "primary_hit": 0.6944143936816854,
+      "replica_hit": 0.6077654974915726
+    },
+    {
+      "elapsed_s": 180.0,
+      "qps": 25558.100000000002,
+      "primary_hit": 0.6941940365752266,
+      "replica_hit": 0.6086431741492847
+    },
+    {
+      "elapsed_s": 240.0,
+      "qps": 26027.800000000003,
+      "primary_hit": 0.6962419203517921,
+      "replica_hit": 0.6080146859967317
+    },
+    {
+      "elapsed_s": 300.0,
+      "qps": 26156.1,
+      "primary_hit": 0.6969397936943873,
+      "replica_hit": 0.6065571759959943
+    },
+    {
+      "elapsed_s": 360.0,
+      "qps": 26298.2,
+      "primary_hit": 0.6965347208783963,
+      "replica_hit": 0.607026770303613
+    },
+    {
+      "elapsed_s": 420.0,
+      "qps": 26428.5,
+      "primary_hit": 0.6962793574724224,
+      "replica_hit": 0.607330039324625
+    },
+    {
+      "elapsed_s": 480.0,
+      "qps": 26944.1,
+      "primary_hit": 0.695310742946027,
+      "replica_hit": 0.6067748491093905
+    },
+    {
+      "elapsed_s": 540.0,
+      "qps": 27119.699999999997,
+      "primary_hit": 0.6968470112974429,
+      "replica_hit": 0.6070753818092723
+    },
+    {
+      "elapsed_s": 600.0,
+      "qps": 27039.9,
+      "primary_hit": 0.6963241456611079,
+      "replica_hit": 0.6064205160567303
+    }
+  ]
+}

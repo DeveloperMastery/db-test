@@ -1,0 +1,24 @@
+                                                                  QUERY PLAN                                                                  
+----------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=0.42..14.49 rows=12 width=162) (actual time=0.097..0.147 rows=10.00 loops=1)
+   Buffers: shared hit=15
+   ->  Index Scan using posts_user_created_idx on posts p  (cost=0.42..14.49 rows=12 width=162) (actual time=0.096..0.144 rows=10.00 loops=1)
+         Index Cond: (user_id = 80001)
+         Index Searches: 1
+         Buffers: shared hit=15
+ Planning:
+   Buffers: shared hit=117
+ Planning Time: 0.901 ms
+ Execution Time: 0.193 ms
+(10 rows)
+
+                                                       QUERY PLAN                                                        
+-------------------------------------------------------------------------------------------------------------------------
+ Index Scan using posts_pkey on posts p  (cost=0.42..2.64 rows=1 width=162) (actual time=0.031..0.032 rows=1.00 loops=1)
+   Index Cond: (id = 1000000)
+   Index Searches: 1
+   Buffers: shared hit=4
+ Planning Time: 0.094 ms
+ Execution Time: 0.050 ms
+(6 rows)
+

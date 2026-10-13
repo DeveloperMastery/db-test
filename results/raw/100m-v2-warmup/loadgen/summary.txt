@@ -1,0 +1,13 @@
+pgbench (18.6 (Ubuntu 18.6-1.pgdg26.04+2))
+progress: 60.0 s, 11456.7 tps, lat 4.349 ms stddev 6.793, 0 failed
+progress: 120.0 s, 11887.2 tps, lat 4.203 ms stddev 6.797, 0 failed
+progress: 180.0 s, 12023.7 tps, lat 4.160 ms stddev 6.633, 0 failed
+progress: 240.0 s, 12232.2 tps, lat 4.087 ms stddev 6.319, 0 failed
+progress: 300.0 s, 12262.5 tps, lat 4.077 ms stddev 6.648, 0 failed
+progress: 360.0 s, 12552.8 tps, lat 3.982 ms stddev 6.040, 0 failed
+progress: 420.0 s, 13186.5 tps, lat 3.790 ms stddev 5.499, 0 failed
+progress: 480.0 s, 12489.7 tps, lat 4.002 ms stddev 6.646, 0 failed
+progress: 540.0 s, 12507.2 tps, lat 3.997 ms stddev 6.012, 0 failed
+progress: 600.0 s, 13366.9 tps, lat 3.739 ms stddev 5.453, 0 failed
+progress: 660.0 s, 13633.6 tps, lat 3.667 ms stddev 5.461, 0 failed
+progress: 720.0 s, 13308.2 tps, lat 3.756 ms stddev 5.537, 0 failed

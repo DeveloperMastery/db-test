@@ -1,0 +1,40 @@
+                                                                   QUERY PLAN                                                                    
+-------------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=0.42..33.91 rows=10 width=167) (actual time=0.146..0.333 rows=20.00 loops=1)
+   Buffers: shared hit=86
+   ->  Index Scan using posts_user_created_idx on posts p  (cost=0.42..33.91 rows=10 width=167) (actual time=0.145..0.328 rows=20.00 loops=1)
+         Index Cond: (user_id = 1)
+         Index Searches: 1
+         Buffers: shared hit=86
+         SubPlan 1
+           ->  Aggregate  (cost=2.67..2.68 rows=1 width=8) (actual time=0.005..0.005 rows=1.00 loops=20)
+                 Buffers: shared hit=60
+                 ->  Index Only Scan using likes_pkey on likes l  (cost=0.43..2.66 rows=2 width=0) (actual time=0.004..0.004 rows=0.00 loops=20)
+                       Index Cond: (post_id = p.id)
+                       Heap Fetches: 0
+                       Index Searches: 20
+                       Buffers: shared hit=60
+ Planning:
+   Buffers: shared hit=140
+ Planning Time: 1.062 ms
+ Execution Time: 0.454 ms
+(18 rows)
+
+                                                                 QUERY PLAN                                                                  
+---------------------------------------------------------------------------------------------------------------------------------------------
+ Index Scan using posts_pkey on posts p  (cost=0.42..5.32 rows=1 width=167) (actual time=4.100..4.104 rows=1.00 loops=1)
+   Index Cond: (id = 1000000)
+   Index Searches: 1
+   Buffers: shared hit=3733
+   SubPlan 1
+     ->  Aggregate  (cost=2.67..2.68 rows=1 width=8) (actual time=4.055..4.056 rows=1.00 loops=1)
+           Buffers: shared hit=3729
+           ->  Index Only Scan using likes_pkey on likes l  (cost=0.43..2.66 rows=2 width=0) (actual time=0.074..3.590 rows=3751.00 loops=1)
+                 Index Cond: (post_id = p.id)
+                 Heap Fetches: 3751
+                 Index Searches: 1
+                 Buffers: shared hit=3729
+ Planning Time: 0.125 ms
+ Execution Time: 4.145 ms
+(14 rows)
+

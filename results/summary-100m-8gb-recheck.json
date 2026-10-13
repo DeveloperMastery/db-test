@@ -1,0 +1,170 @@
+{
+  "prefix": "100m-8gb-recheck",
+  "scale": "100M",
+  "workload": "mixed-8020",
+  "warmup": {
+    "mode": "adaptive",
+    "elapsed_s": 624.34087575,
+    "stable": true,
+    "capped": false,
+    "qps_span_limit": 0.05,
+    "hit_span_limit": 0.005,
+    "min_s": 600,
+    "max_s": 2400,
+    "windows": [
+      {
+        "elapsed_s": 60.0,
+        "qps": 11399.5,
+        "avg_latency_ms": 4.371,
+        "failed": 0,
+        "hit_ratio": 0.6618731174361496
+      },
+      {
+        "elapsed_s": 120.0,
+        "qps": 11595.0,
+        "avg_latency_ms": 4.311,
+        "failed": 0,
+        "hit_ratio": 0.666868410636809
+      },
+      {
+        "elapsed_s": 180.0,
+        "qps": 11771.6,
+        "avg_latency_ms": 4.247,
+        "failed": 0,
+        "hit_ratio": 0.6667283721400337
+      },
+      {
+        "elapsed_s": 240.0,
+        "qps": 11832.1,
+        "avg_latency_ms": 4.225,
+        "failed": 0,
+        "hit_ratio": 0.6659509857762744
+      },
+      {
+        "elapsed_s": 300.0,
+        "qps": 11692.9,
+        "avg_latency_ms": 4.276,
+        "failed": 0,
+        "hit_ratio": 0.6663670814021472
+      },
+      {
+        "elapsed_s": 360.0,
+        "qps": 12019.9,
+        "avg_latency_ms": 4.159,
+        "failed": 0,
+        "hit_ratio": 0.6657887215150105
+      },
+      {
+        "elapsed_s": 420.0,
+        "qps": 12036.0,
+        "avg_latency_ms": 4.153,
+        "failed": 0,
+        "hit_ratio": 0.6659140380441804
+      },
+      {
+        "elapsed_s": 480.0,
+        "qps": 12137.0,
+        "avg_latency_ms": 4.119,
+        "failed": 0,
+        "hit_ratio": 0.6654086916523325
+      },
+      {
+        "elapsed_s": 540.0,
+        "qps": 12160.6,
+        "avg_latency_ms": 4.111,
+        "failed": 0,
+        "hit_ratio": 0.6651833839364584
+      },
+      {
+        "elapsed_s": 600.0,
+        "qps": 11960.8,
+        "avg_latency_ms": 4.179,
+        "failed": 0,
+        "hit_ratio": 0.6655849449902937
+      }
+    ]
+  },
+  "stood": true,
+  "confirmed_rate": 8505,
+  "attempts": [
+    {
+      "rate": 8505,
+      "passed": true,
+      "rows": [
+        {
+          "phase": "phase3",
+          "scale": "100M",
+          "workload": "mixed-8020",
+          "run_type": "confirm",
+          "target_rate": 8505,
+          "total_qps": "8502.667",
+          "read_qps": "7650.700",
+          "write_qps": "851.967",
+          "p50": "1.903",
+          "p95": "19.127",
+          "p99": "56.132",
+          "error_rate": "0.000000",
+          "pass_fail": "pass",
+          "avg_cpu": "68.629",
+          "avg_iowait": "23.271",
+          "avg_steal": "0.000",
+          "cache_hit_ratio": "0.664877",
+          "invalid": "no",
+          "run_id": "100m-8gb-recheck-confirm-r8505-1",
+          "loadgen_cpu": "6.260",
+          "notes": "loadgen_core_max 11.42; pgbench_thread_max 5.36; ramp_30s_p99 1367.688 ramp_lag_p99 1362.425 ramp_exec_p99 28.007 ramp_fail 0; disk_util 55.54 await_ms 0.9950907551747334"
+        },
+        {
+          "phase": "phase3",
+          "scale": "100M",
+          "workload": "mixed-8020",
+          "run_type": "confirm",
+          "target_rate": 8505,
+          "total_qps": "8496.143",
+          "read_qps": "7648.090",
+          "write_qps": "848.053",
+          "p50": "2.134",
+          "p95": "47.754",
+          "p99": "236.280",
+          "error_rate": "0.000000",
+          "pass_fail": "pass",
+          "avg_cpu": "68.886",
+          "avg_iowait": "23.157",
+          "avg_steal": "0.000",
+          "cache_hit_ratio": "0.663058",
+          "invalid": "no",
+          "run_id": "100m-8gb-recheck-confirm-r8505-2",
+          "loadgen_cpu": "6.167",
+          "notes": "loadgen_core_max 11.31; pgbench_thread_max 5.14; ramp_30s_p99 74.663 ramp_lag_p99 68.624 ramp_exec_p99 14.435 ramp_fail 0; disk_util 55.89 await_ms 0.9824471940040471"
+        },
+        {
+          "phase": "phase3",
+          "scale": "100M",
+          "workload": "mixed-8020",
+          "run_type": "confirm",
+          "target_rate": 8505,
+          "total_qps": "8499.060",
+          "read_qps": "7649.037",
+          "write_qps": "850.023",
+          "p50": "2.603",
+          "p95": "82.028",
+          "p99": "214.876",
+          "error_rate": "0.000000",
+          "pass_fail": "pass",
+          "avg_cpu": "70.343",
+          "avg_iowait": "22.529",
+          "avg_steal": "0.000",
+          "cache_hit_ratio": "0.662609",
+          "invalid": "no",
+          "run_id": "100m-8gb-recheck-confirm-r8505-3",
+          "loadgen_cpu": "6.303",
+          "notes": "loadgen_core_max 10.76; pgbench_thread_max 5.33; ramp_30s_p99 1304.241 ramp_lag_p99 1297.483 ramp_exec_p99 24.537 ramp_fail 0; disk_util 56.50 await_ms 1.0251423124014087"
+        }
+      ]
+    }
+  ],
+  "search_failures": [],
+  "stopped_reason": null,
+  "end_db_bytes": 68078474943,
+  "end_wal_bytes": 4596957184
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "at": "2026-10-05T12:41:29Z",
+    "hourly": 0.32143,
+    "note": "shared database plus load generator"
+  },
+  {
+    "at": "2026-10-05T19:18:44Z",
+    "hourly": 0.43452,
+    "note": "dedicated c5-4vcpu-8gb database plus load generator"
+  },
+  {
+    "at": "2026-10-06T16:11:57Z",
+    "hourly": 0.61904,
+    "note": "primary c5-4 plus replica c5-4 plus load generator"
+  },
+  {
+    "at": "2026-10-06T19:09:13Z",
+    "hourly": 0.80357,
+    "note": "primary c5-8vcpu-16gb plus replica plus load generator"
+  },
+  {
+    "at": "2026-10-06T20:18:06Z",
+    "hourly": 0.61905,
+    "note": "primary plus load generator, replica destroyed"
+  },
+  {
+    "at": "2026-10-06T20:18:07Z",
+    "hourly": 0.36905,
+    "note": "primary only; load generator destroyed"
+  },
+  {
+    "at": "2026-10-06T22:06:55Z",
+    "hourly": 0.18452,
+    "note": "primary c5-4vcpu-8gb only, before the load generator returned"
+  },
+  {
+    "at": "2026-10-06T22:09:32Z",
+    "hourly": 0.43452,
+    "note": "primary c5-4vcpu-8gb plus load generator"
+  },
+  {
+    "at": "2026-10-07T13:59:51Z",
+    "hourly": 0.61904,
+    "note": "primary c5-4 plus replica c5-4 plus load generator"
+  },
+  {
+    "at": "2026-10-13T16:28:00Z",
+    "hourly": 0.0,
+    "note": "primary, load generator, and replica destroyed"
+  }
+]

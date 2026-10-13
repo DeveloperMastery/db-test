@@ -1,0 +1,31 @@
+label 100m-v2
+heap was already loaded; indexes built after the dropped SSH session
+VERIFY
+users_s 0.594
+posts_s 35.707
+likes_s 12.450
+like_count_s 36.910
+bodies_s 66.897
+INDEX
+users_pkey_s 8.711
+posts_pkey_s 119.071
+likes_pkey_s 178.598
+posts_user_created_idx_s 138.687
+setval_s 0.012
+identity_s 0.002
+vacuum_s 852.580
+checkpoint_s 6.240
+COUNTS
+users|10000000
+posts|100000000
+likes|200000000
+like_count 2,2,0
+body_lengths 80,200
+identity_last 100000000
+SIZES
+likes,10435821568,6304022528,16742752256
+posts,41736904704,5400010752,47148482560
+users,602800128,224641024,827645952
+database,64726963903
+wal_bytes 8589934592
+size_vs_ram 7.535210

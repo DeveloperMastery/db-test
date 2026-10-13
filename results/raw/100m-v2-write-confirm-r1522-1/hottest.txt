@@ -1,0 +1,10 @@
+before
+max=8 tied=6
+98001196 like_count=8 likes_rows=8
+96699695 like_count=8 likes_rows=8
+95385038 like_count=8 likes_rows=8
+after
+max=8 tied=7
+98001196 like_count=8 likes_rows=8
+96699695 like_count=8 likes_rows=8
+95385038 like_count=8 likes_rows=8

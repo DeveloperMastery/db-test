@@ -1,0 +1,10 @@
+before
+max=30 tied=7
+992171 like_count=30 likes_rows=30
+958162 like_count=30 likes_rows=30
+948926 like_count=30 likes_rows=30
+after
+max=35 tied=1
+948926 like_count=35 likes_rows=35
+887436 like_count=34 likes_rows=34
+966118 like_count=32 likes_rows=32

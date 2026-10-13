@@ -1,0 +1,43 @@
+pgbench (18.6 (Ubuntu 18.6-1.pgdg26.04+2))
+progress: 10.0 s, 391.4 tps, lat 3.737 ms stddev 4.854, 0 failed, lag 0.069 ms
+progress: 20.0 s, 392.0 tps, lat 3.191 ms stddev 2.969, 0 failed, lag 0.068 ms
+progress: 30.0 s, 405.8 tps, lat 3.076 ms stddev 3.095, 0 failed, lag 0.069 ms
+progress: 40.0 s, 400.7 tps, lat 7.268 ms stddev 25.308, 0 failed, lag 1.331 ms
+progress: 50.0 s, 393.4 tps, lat 3.001 ms stddev 2.695, 0 failed, lag 0.067 ms
+progress: 60.0 s, 391.0 tps, lat 3.218 ms stddev 3.492, 0 failed, lag 0.068 ms
+progress: 70.0 s, 400.8 tps, lat 3.486 ms stddev 6.523, 0 failed, lag 0.082 ms
+progress: 80.0 s, 402.9 tps, lat 3.451 ms stddev 4.791, 0 failed, lag 0.070 ms
+progress: 90.0 s, 398.9 tps, lat 3.035 ms stddev 4.290, 0 failed, lag 0.066 ms
+progress: 100.0 s, 404.6 tps, lat 140.454 ms stddev 232.666, 0 failed, lag 100.049 ms
+progress: 110.0 s, 392.2 tps, lat 15.646 ms stddev 46.522, 0 failed, lag 4.469 ms
+progress: 120.0 s, 400.9 tps, lat 20.395 ms stddev 49.343, 0 failed, lag 4.836 ms
+progress: 130.0 s, 398.5 tps, lat 69.981 ms stddev 144.574, 0 failed, lag 42.207 ms
+progress: 140.0 s, 397.9 tps, lat 4.406 ms stddev 9.371, 0 failed, lag 0.095 ms
+transaction type: multiple scripts
+scaling factor: 1
+query mode: prepared
+number of clients: 50
+number of threads: 8
+maximum number of tries: 1
+duration: 150 s
+number of transactions actually processed: 59689
+number of failed transactions: 0 (0.000%)
+latency average = 21.256 ms
+latency stddev = 84.095 ms
+rate limit schedule lag: avg 11.001 (max 942.922) ms
+initial connection time = 163.376 ms
+tps = 398.284018 (without initial connection time)
+SQL script 1: /opt/pg-limit/sql/like.sql
+ - weight: 80 (targets 80.0% of total)
+ - 47460 transactions (79.5% of total)
+ - number of transactions actually processed: 47460 (tps = 316.684137)
+ - number of failed transactions: 0 (0.000%)
+ - latency average = 21.750 ms
+ - latency stddev = 85.417 ms
+SQL script 2: /opt/pg-limit/sql/new_post.sql
+ - weight: 20 (targets 20.0% of total)
+ - 12198 transactions (20.4% of total)
+ - number of transactions actually processed: 12198 (tps = 81.393028)
+ - number of failed transactions: 0 (0.000%)
+ - latency average = 19.148 ms
+ - latency stddev = 78.315 ms

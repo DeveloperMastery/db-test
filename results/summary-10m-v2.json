@@ -1,0 +1,714 @@
+{
+  "prefix": "10m-v2",
+  "scale": "10M",
+  "workload": "mixed-8020",
+  "scripts": [
+    [
+      "profile.sql",
+      45
+    ],
+    [
+      "open_post.sql",
+      45
+    ],
+    [
+      "like.sql",
+      8
+    ],
+    [
+      "new_post.sql",
+      2
+    ]
+  ],
+  "warmup": {
+    "mode": "adaptive",
+    "elapsed_s": 623.0812750000005,
+    "stable": true,
+    "capped": false,
+    "qps_span_limit": 0.05,
+    "hit_span_limit": 0.005,
+    "min_s": 600,
+    "max_s": 2400,
+    "windows": [
+      {
+        "elapsed_s": 60.0,
+        "qps": 24353.0,
+        "avg_latency_ms": 2.046,
+        "failed": 0,
+        "hit_ratio": 0.9728608117737677
+      },
+      {
+        "elapsed_s": 120.0,
+        "qps": 27663.9,
+        "avg_latency_ms": 1.806,
+        "failed": 0,
+        "hit_ratio": 0.9821274510589773
+      },
+      {
+        "elapsed_s": 180.0,
+        "qps": 28140.9,
+        "avg_latency_ms": 1.776,
+        "failed": 0,
+        "hit_ratio": 0.9822021870228929
+      },
+      {
+        "elapsed_s": 240.0,
+        "qps": 27986.7,
+        "avg_latency_ms": 1.785,
+        "failed": 0,
+        "hit_ratio": 0.981668265119034
+      },
+      {
+        "elapsed_s": 300.0,
+        "qps": 28069.2,
+        "avg_latency_ms": 1.78,
+        "failed": 0,
+        "hit_ratio": 0.9804977759572827
+      },
+      {
+        "elapsed_s": 360.0,
+        "qps": 28087.0,
+        "avg_latency_ms": 1.779,
+        "failed": 0,
+        "hit_ratio": 0.9796841577090816
+      },
+      {
+        "elapsed_s": 420.0,
+        "qps": 27903.7,
+        "avg_latency_ms": 1.79,
+        "failed": 0,
+        "hit_ratio": 0.9771753434552019
+      },
+      {
+        "elapsed_s": 480.0,
+        "qps": 27946.4,
+        "avg_latency_ms": 1.788,
+        "failed": 0,
+        "hit_ratio": 0.9788145198069204
+      },
+      {
+        "elapsed_s": 540.0,
+        "qps": 27720.2,
+        "avg_latency_ms": 1.803,
+        "failed": 0,
+        "hit_ratio": 0.978357551217558
+      },
+      {
+        "elapsed_s": 600.0,
+        "qps": 27797.4,
+        "avg_latency_ms": 1.798,
+        "failed": 0,
+        "hit_ratio": 0.9780103111910989
+      }
+    ]
+  },
+  "floor_rate": null,
+  "ceiling_qps": 27479.844907,
+  "ceiling": {
+    "phase": "phase1",
+    "scale": "10M",
+    "workload": "mixed-8020",
+    "run_type": "ceiling",
+    "target_rate": "",
+    "total_qps": "27479.845",
+    "read_qps": "24735.231",
+    "write_qps": "2744.614",
+    "p50": "1.127",
+    "p95": "6.684",
+    "p99": "10.848",
+    "error_rate": "0.000000",
+    "pass_fail": "pass",
+    "avg_cpu": "96.417",
+    "avg_iowait": "1.042",
+    "avg_steal": "0.000",
+    "cache_hit_ratio": "0.977329",
+    "invalid": "no",
+    "run_id": "10m-v2-ceiling",
+    "loadgen_cpu": "16.970",
+    "notes": "loadgen_core_max 38.32; pgbench_thread_max 14.83; disk_util 45.23 await_ms 0.9758242826832246"
+  },
+  "candidate_rate": 13309,
+  "candidate": {
+    "phase": "phase1",
+    "scale": "10M",
+    "workload": "mixed-8020",
+    "run_type": "search",
+    "target_rate": 13309,
+    "total_qps": "13316.942",
+    "read_qps": "11983.475",
+    "write_qps": "1333.467",
+    "p50": "0.429",
+    "p95": "2.007",
+    "p99": "6.784",
+    "error_rate": "0.000000",
+    "pass_fail": "pass",
+    "avg_cpu": "55.733",
+    "avg_iowait": "10.733",
+    "avg_steal": "0.000",
+    "cache_hit_ratio": "0.976686",
+    "invalid": "no",
+    "run_id": "10m-v2-search-06",
+    "loadgen_cpu": "9.421",
+    "notes": "loadgen_core_max 19.28; pgbench_thread_max 8.13; ramp_30s_p99 22.244 ramp_lag_p99 18.189 ramp_exec_p99 5.322 ramp_fail 0; disk_util 54.77 await_ms 0.7594934353137116"
+  },
+  "confirmed_rate": 12643,
+  "attempts": [
+    {
+      "rate": 13309,
+      "passed": false,
+      "rows": [
+        {
+          "phase": "phase1",
+          "scale": "10M",
+          "workload": "mixed-8020",
+          "run_type": "confirm",
+          "target_rate": 13309,
+          "total_qps": "13307.423",
+          "read_qps": "11976.820",
+          "write_qps": "1330.603",
+          "p50": "0.421",
+          "p95": "1.800",
+          "p99": "5.749",
+          "error_rate": "0.000000",
+          "pass_fail": "pass",
+          "avg_cpu": "52.303",
+          "avg_iowait": "11.500",
+          "avg_steal": "0.000",
+          "cache_hit_ratio": "0.976305",
+          "invalid": "no",
+          "run_id": "10m-v2-confirm-r13309-1",
+          "loadgen_cpu": "9.347",
+          "notes": "loadgen_core_max 19.29; pgbench_thread_max 8.20; ramp_30s_p99 14.967 ramp_lag_p99 8.914 ramp_exec_p99 5.045 ramp_fail 0; disk_util 56.07 await_ms 0.751507713292225"
+        },
+        {
+          "phase": "phase1",
+          "scale": "10M",
+          "workload": "mixed-8020",
+          "run_type": "confirm",
+          "target_rate": 13309,
+          "total_qps": "13312.697",
+          "read_qps": "11979.887",
+          "write_qps": "1332.810",
+          "p50": "0.454",
+          "p95": "2820.148",
+          "p99": "7491.951",
+          "error_rate": "0.000000",
+          "pass_fail": "fail",
+          "avg_cpu": "53.894",
+          "avg_iowait": "12.470",
+          "avg_steal": "0.000",
+          "cache_hit_ratio": "0.976990",
+          "invalid": "no",
+          "run_id": "10m-v2-confirm-r13309-2",
+          "loadgen_cpu": "9.312",
+          "notes": "loadgen_core_max 18.50; pgbench_thread_max 7.89; ramp_30s_p99 8.310 ramp_lag_p99 0.216 ramp_exec_p99 4.486 ramp_fail 0; disk_util 56.25 await_ms 2.607908726818823"
+        }
+      ]
+    },
+    {
+      "rate": 12643,
+      "passed": true,
+      "rows": [
+        {
+          "phase": "phase1",
+          "scale": "10M",
+          "workload": "mixed-8020",
+          "run_type": "confirm",
+          "target_rate": 12643,
+          "total_qps": "12630.797",
+          "read_qps": "11367.150",
+          "write_qps": "1263.647",
+          "p50": "0.430",
+          "p95": "2.651",
+          "p99": "231.670",
+          "error_rate": "0.000000",
+          "pass_fail": "pass",
+          "avg_cpu": "51.939",
+          "avg_iowait": "12.333",
+          "avg_steal": "0.000",
+          "cache_hit_ratio": "0.976867",
+          "invalid": "no",
+          "run_id": "10m-v2-confirm-r12643-1",
+          "loadgen_cpu": "9.218",
+          "notes": "loadgen_core_max 18.64; pgbench_thread_max 7.97; ramp_30s_p99 498.619 ramp_lag_p99 493.884 ramp_exec_p99 11.980 ramp_fail 0; disk_util 55.46 await_ms 1.004425873428227"
+        },
+        {
+          "phase": "phase1",
+          "scale": "10M",
+          "workload": "mixed-8020",
+          "run_type": "confirm",
+          "target_rate": 12643,
+          "total_qps": "12632.660",
+          "read_qps": "11370.140",
+          "write_qps": "1262.520",
+          "p50": "0.420",
+          "p95": "1.706",
+          "p99": "4.772",
+          "error_rate": "0.000000",
+          "pass_fail": "pass",
+          "avg_cpu": "49.227",
+          "avg_iowait": "12.015",
+          "avg_steal": "0.000",
+          "cache_hit_ratio": "0.976203",
+          "invalid": "no",
+          "run_id": "10m-v2-confirm-r12643-2",
+          "loadgen_cpu": "9.142",
+          "notes": "loadgen_core_max 18.62; pgbench_thread_max 8.09; ramp_30s_p99 10.854 ramp_lag_p99 1.159 ramp_exec_p99 4.512 ramp_fail 0; disk_util 55.34 await_ms 0.7252886792458201"
+        },
+        {
+          "phase": "phase1",
+          "scale": "10M",
+          "workload": "mixed-8020",
+          "run_type": "confirm",
+          "target_rate": 12643,
+          "total_qps": "12634.570",
+          "read_qps": "11364.900",
+          "write_qps": "1269.670",
+          "p50": "0.422",
+          "p95": "1.875",
+          "p99": "5.856",
+          "error_rate": "0.000000",
+          "pass_fail": "pass",
+          "avg_cpu": "52.152",
+          "avg_iowait": "11.652",
+          "avg_steal": "0.000",
+          "cache_hit_ratio": "0.976820",
+          "invalid": "no",
+          "run_id": "10m-v2-confirm-r12643-3",
+          "loadgen_cpu": "8.869",
+          "notes": "loadgen_core_max 17.83; pgbench_thread_max 7.75; ramp_30s_p99 30.278 ramp_lag_p99 26.153 ramp_exec_p99 6.126 ramp_fail 0; disk_util 55.10 await_ms 0.7511538511621663"
+        }
+      ]
+    }
+  ],
+  "search_failures": [
+    {
+      "phase": "phase1",
+      "scale": "10M",
+      "workload": "mixed-8020",
+      "run_type": "search",
+      "target_rate": 13739,
+      "total_qps": "13714.600",
+      "read_qps": "12339.517",
+      "write_qps": "1375.083",
+      "p50": "0.436",
+      "p95": "55.633",
+      "p99": "530.779",
+      "error_rate": "0.000000",
+      "pass_fail": "fail",
+      "avg_cpu": "57.867",
+      "avg_iowait": "11.167",
+      "avg_steal": "0.000",
+      "cache_hit_ratio": "0.975233",
+      "invalid": "no",
+      "run_id": "10m-v2-search-01",
+      "loadgen_cpu": "9.807",
+      "notes": "loadgen_core_max 20.25; pgbench_thread_max 9.11; ramp_30s_p99 23.856 ramp_lag_p99 20.145 ramp_exec_p99 5.850 ramp_fail 0; disk_util 55.48 await_ms 1.0950841273753669"
+    }
+  ],
+  "stopped_reason": null,
+  "drift": [
+    {
+      "run_id": "10m-v2-search-01",
+      "means": {
+        "open_post": {
+          "calls": 926440,
+          "mean_ms": 0.057639524450615695
+        },
+        "profile": {
+          "calls": 926314,
+          "mean_ms": 0.10571495864753054
+        },
+        "like_write": {
+          "calls": 165457,
+          "mean_ms": 0.43706757297699483
+        },
+        "new_post": {
+          "calls": 41063,
+          "mean_ms": 0.14548108530795756
+        },
+        "other": {
+          "calls": 30,
+          "mean_ms": 0.821779000000015
+        }
+      },
+      "hottest": "before\nmax=11 tied=1\n8141475 like_count=11 likes_rows=11\n9570057 like_count=10 likes_rows=10\n9823085 like_count=9 likes_rows=9\nafter\nmax=11 tied=1\n8141475 like_count=11 likes_rows=11\n9570057 like_count=10 likes_rows=10\n8052103 like_count=10 likes_rows=10\n",
+      "p95": 55.633,
+      "p99": 530.779,
+      "ramp_p99": 23.856,
+      "ramp_lag_p99": 20.145,
+      "ramp_exec_p99": 5.85,
+      "scored_exec_p99": 7.328,
+      "total_qps": 13714.6,
+      "hit_ratio": 0.9752331403625056,
+      "row": {
+        "phase": "phase1",
+        "scale": "10M",
+        "workload": "mixed-8020",
+        "run_type": "search",
+        "target_rate": 13739,
+        "total_qps": "13714.600",
+        "read_qps": "12339.517",
+        "write_qps": "1375.083",
+        "p50": "0.436",
+        "p95": "55.633",
+        "p99": "530.779",
+        "error_rate": "0.000000",
+        "pass_fail": "fail",
+        "avg_cpu": "57.867",
+        "avg_iowait": "11.167",
+        "avg_steal": "0.000",
+        "cache_hit_ratio": "0.975233",
+        "invalid": "no",
+        "run_id": "10m-v2-search-01",
+        "loadgen_cpu": "9.807",
+        "notes": "loadgen_core_max 20.25; pgbench_thread_max 9.11; ramp_30s_p99 23.856 ramp_lag_p99 20.145 ramp_exec_p99 5.850 ramp_fail 0; disk_util 55.48 await_ms 1.0950841273753669"
+      }
+    },
+    {
+      "run_id": "10m-v2-search-06",
+      "means": {
+        "profile": {
+          "calls": 900119,
+          "mean_ms": 0.10518913669311934
+        },
+        "open_post": {
+          "calls": 898480,
+          "mean_ms": 0.05532376800265619
+        },
+        "like_write": {
+          "calls": 160029,
+          "mean_ms": 0.36697826830730196
+        },
+        "new_post": {
+          "calls": 39990,
+          "mean_ms": 0.1300035904976008
+        },
+        "other": {
+          "calls": 30,
+          "mean_ms": 0.8730719000000439
+        }
+      },
+      "hottest": "before\nmax=11 tied=1\n8141475 like_count=11 likes_rows=11\n9570057 like_count=10 likes_rows=10\n9352930 like_count=10 likes_rows=10\nafter\nmax=11 tied=2\n8141475 like_count=11 likes_rows=11\n8052103 like_count=11 likes_rows=11\n9991157 like_count=10 likes_rows=10\n",
+      "p95": 2.007,
+      "p99": 6.784,
+      "ramp_p99": 22.244,
+      "ramp_lag_p99": 18.189,
+      "ramp_exec_p99": 5.322,
+      "scored_exec_p99": 4.389,
+      "total_qps": 13316.941666666668,
+      "hit_ratio": 0.9766857341292065,
+      "row": {
+        "phase": "phase1",
+        "scale": "10M",
+        "workload": "mixed-8020",
+        "run_type": "search",
+        "target_rate": 13309,
+        "total_qps": "13316.942",
+        "read_qps": "11983.475",
+        "write_qps": "1333.467",
+        "p50": "0.429",
+        "p95": "2.007",
+        "p99": "6.784",
+        "error_rate": "0.000000",
+        "pass_fail": "pass",
+        "avg_cpu": "55.733",
+        "avg_iowait": "10.733",
+        "avg_steal": "0.000",
+        "cache_hit_ratio": "0.976686",
+        "invalid": "no",
+        "run_id": "10m-v2-search-06",
+        "loadgen_cpu": "9.421",
+        "notes": "loadgen_core_max 19.28; pgbench_thread_max 8.13; ramp_30s_p99 22.244 ramp_lag_p99 18.189 ramp_exec_p99 5.322 ramp_fail 0; disk_util 54.77 await_ms 0.7594934353137116"
+      }
+    },
+    {
+      "run_id": "10m-v2-confirm-r13309-1",
+      "means": {
+        "profile": {
+          "calls": 1977766,
+          "mean_ms": 0.0964775770203284
+        },
+        "open_post": {
+          "calls": 1974869,
+          "mean_ms": 0.05196769817492139
+        },
+        "like_write": {
+          "calls": 351663,
+          "mean_ms": 0.25812488354188723
+        },
+        "new_post": {
+          "calls": 87586,
+          "mean_ms": 0.06892501470555577
+        },
+        "other": {
+          "calls": 66,
+          "mean_ms": 0.7628153787878807
+        }
+      },
+      "hottest": "before\nmax=11 tied=2\n8141475 like_count=11 likes_rows=11\n8052103 like_count=11 likes_rows=11\n9991157 like_count=10 likes_rows=10\nafter\nmax=12 tied=2\n9559761 like_count=12 likes_rows=12\n8625739 like_count=12 likes_rows=12\n9578983 like_count=11 likes_rows=11\n",
+      "p95": 1.8,
+      "p99": 5.749,
+      "ramp_p99": 14.967,
+      "ramp_lag_p99": 8.914,
+      "ramp_exec_p99": 5.045,
+      "scored_exec_p99": 4.107,
+      "total_qps": 13307.423333333334,
+      "hit_ratio": 0.9763045257463269,
+      "row": {
+        "phase": "phase1",
+        "scale": "10M",
+        "workload": "mixed-8020",
+        "run_type": "confirm",
+        "target_rate": 13309,
+        "total_qps": "13307.423",
+        "read_qps": "11976.820",
+        "write_qps": "1330.603",
+        "p50": "0.421",
+        "p95": "1.800",
+        "p99": "5.749",
+        "error_rate": "0.000000",
+        "pass_fail": "pass",
+        "avg_cpu": "52.303",
+        "avg_iowait": "11.500",
+        "avg_steal": "0.000",
+        "cache_hit_ratio": "0.976305",
+        "invalid": "no",
+        "run_id": "10m-v2-confirm-r13309-1",
+        "loadgen_cpu": "9.347",
+        "notes": "loadgen_core_max 19.29; pgbench_thread_max 8.20; ramp_30s_p99 14.967 ramp_lag_p99 8.914 ramp_exec_p99 5.045 ramp_fail 0; disk_util 56.07 await_ms 0.751507713292225"
+      }
+    },
+    {
+      "run_id": "10m-v2-confirm-r13309-2",
+      "means": {
+        "open_post": {
+          "calls": 1979587,
+          "mean_ms": 0.06392041545282195
+        },
+        "profile": {
+          "calls": 1973529,
+          "mean_ms": 0.11767929669060984
+        },
+        "like_write": {
+          "calls": 351846,
+          "mean_ms": 0.35610050464136206
+        },
+        "new_post": {
+          "calls": 87917,
+          "mean_ms": 0.10858209971910239
+        },
+        "other": {
+          "calls": 66,
+          "mean_ms": 0.9997583181818065
+        }
+      },
+      "hottest": "before\nmax=12 tied=2\n9559761 like_count=12 likes_rows=12\n8625739 like_count=12 likes_rows=12\n9578983 like_count=11 likes_rows=11\nafter\nmax=13 tied=1\n8625739 like_count=13 likes_rows=13\n9559761 like_count=12 likes_rows=12\n9671023 like_count=11 likes_rows=11\n",
+      "p95": 2820.148,
+      "p99": 7491.951,
+      "ramp_p99": 8.31,
+      "ramp_lag_p99": 0.216,
+      "ramp_exec_p99": 4.486,
+      "scored_exec_p99": 7.77,
+      "total_qps": 13312.696666666667,
+      "hit_ratio": 0.976989841059854,
+      "row": {
+        "phase": "phase1",
+        "scale": "10M",
+        "workload": "mixed-8020",
+        "run_type": "confirm",
+        "target_rate": 13309,
+        "total_qps": "13312.697",
+        "read_qps": "11979.887",
+        "write_qps": "1332.810",
+        "p50": "0.454",
+        "p95": "2820.148",
+        "p99": "7491.951",
+        "error_rate": "0.000000",
+        "pass_fail": "fail",
+        "avg_cpu": "53.894",
+        "avg_iowait": "12.470",
+        "avg_steal": "0.000",
+        "cache_hit_ratio": "0.976990",
+        "invalid": "no",
+        "run_id": "10m-v2-confirm-r13309-2",
+        "loadgen_cpu": "9.312",
+        "notes": "loadgen_core_max 18.50; pgbench_thread_max 7.89; ramp_30s_p99 8.310 ramp_lag_p99 0.216 ramp_exec_p99 4.486 ramp_fail 0; disk_util 56.25 await_ms 2.607908726818823"
+      }
+    },
+    {
+      "run_id": "10m-v2-confirm-r12643-1",
+      "means": {
+        "open_post": {
+          "calls": 1876909,
+          "mean_ms": 0.06036910922977769
+        },
+        "profile": {
+          "calls": 1874911,
+          "mean_ms": 0.11285631852718005
+        },
+        "like_write": {
+          "calls": 333422,
+          "mean_ms": 0.30780230847753565
+        },
+        "new_post": {
+          "calls": 83661,
+          "mean_ms": 0.08875334449744544
+        },
+        "other": {
+          "calls": 66,
+          "mean_ms": 0.8419999393939345
+        }
+      },
+      "hottest": "before\nmax=13 tied=1\n8625739 like_count=13 likes_rows=13\n9559761 like_count=12 likes_rows=12\n9671023 like_count=11 likes_rows=11\nafter\nmax=13 tied=1\n8625739 like_count=13 likes_rows=13\n9578983 like_count=12 likes_rows=12\n9559761 like_count=12 likes_rows=12\n",
+      "p95": 2.651,
+      "p99": 231.67,
+      "ramp_p99": 498.619,
+      "ramp_lag_p99": 493.884,
+      "ramp_exec_p99": 11.98,
+      "scored_exec_p99": 5.808,
+      "total_qps": 12630.796666666667,
+      "hit_ratio": 0.9768669132895219,
+      "row": {
+        "phase": "phase1",
+        "scale": "10M",
+        "workload": "mixed-8020",
+        "run_type": "confirm",
+        "target_rate": 12643,
+        "total_qps": "12630.797",
+        "read_qps": "11367.150",
+        "write_qps": "1263.647",
+        "p50": "0.430",
+        "p95": "2.651",
+        "p99": "231.670",
+        "error_rate": "0.000000",
+        "pass_fail": "pass",
+        "avg_cpu": "51.939",
+        "avg_iowait": "12.333",
+        "avg_steal": "0.000",
+        "cache_hit_ratio": "0.976867",
+        "invalid": "no",
+        "run_id": "10m-v2-confirm-r12643-1",
+        "loadgen_cpu": "9.218",
+        "notes": "loadgen_core_max 18.64; pgbench_thread_max 7.97; ramp_30s_p99 498.619 ramp_lag_p99 493.884 ramp_exec_p99 11.980 ramp_fail 0; disk_util 55.46 await_ms 1.004425873428227"
+      }
+    },
+    {
+      "run_id": "10m-v2-confirm-r12643-2",
+      "means": {
+        "open_post": {
+          "calls": 1876455,
+          "mean_ms": 0.052488781833361635
+        },
+        "profile": {
+          "calls": 1875896,
+          "mean_ms": 0.10077164753322287
+        },
+        "like_write": {
+          "calls": 333458,
+          "mean_ms": 0.2403404702632952
+        },
+        "new_post": {
+          "calls": 83308,
+          "mean_ms": 0.06622707200989121
+        },
+        "other": {
+          "calls": 66,
+          "mean_ms": 0.812946409090893
+        }
+      },
+      "hottest": "before\nmax=13 tied=1\n8625739 like_count=13 likes_rows=13\n9578983 like_count=12 likes_rows=12\n9559761 like_count=12 likes_rows=12\nafter\nmax=13 tied=1\n8625739 like_count=13 likes_rows=13\n9923960 like_count=12 likes_rows=12\n9708251 like_count=12 likes_rows=12\n",
+      "p95": 1.706,
+      "p99": 4.772,
+      "ramp_p99": 10.854,
+      "ramp_lag_p99": 1.159,
+      "ramp_exec_p99": 4.512,
+      "scored_exec_p99": 3.848,
+      "total_qps": 12632.66,
+      "hit_ratio": 0.9762025415869473,
+      "row": {
+        "phase": "phase1",
+        "scale": "10M",
+        "workload": "mixed-8020",
+        "run_type": "confirm",
+        "target_rate": 12643,
+        "total_qps": "12632.660",
+        "read_qps": "11370.140",
+        "write_qps": "1262.520",
+        "p50": "0.420",
+        "p95": "1.706",
+        "p99": "4.772",
+        "error_rate": "0.000000",
+        "pass_fail": "pass",
+        "avg_cpu": "49.227",
+        "avg_iowait": "12.015",
+        "avg_steal": "0.000",
+        "cache_hit_ratio": "0.976203",
+        "invalid": "no",
+        "run_id": "10m-v2-confirm-r12643-2",
+        "loadgen_cpu": "9.142",
+        "notes": "loadgen_core_max 18.62; pgbench_thread_max 8.09; ramp_30s_p99 10.854 ramp_lag_p99 1.159 ramp_exec_p99 4.512 ramp_fail 0; disk_util 55.34 await_ms 0.7252886792458201"
+      }
+    },
+    {
+      "run_id": "10m-v2-confirm-r12643-3",
+      "means": {
+        "open_post": {
+          "calls": 1875699,
+          "mean_ms": 0.05406949950719947
+        },
+        "profile": {
+          "calls": 1875651,
+          "mean_ms": 0.10584919772540473
+        },
+        "like_write": {
+          "calls": 335183,
+          "mean_ms": 0.3436684558346831
+        },
+        "new_post": {
+          "calls": 83862,
+          "mean_ms": 0.12348222306885658
+        },
+        "other": {
+          "calls": 66,
+          "mean_ms": 0.9182332727272724
+        }
+      },
+      "hottest": "before\nmax=13 tied=1\n8625739 like_count=13 likes_rows=13\n9923960 like_count=12 likes_rows=12\n9708251 like_count=12 likes_rows=12\nafter\nmax=13 tied=5\n9654939 like_count=13 likes_rows=13\n9332939 like_count=13 likes_rows=13\n9173180 like_count=13 likes_rows=13\n",
+      "p95": 1.875,
+      "p99": 5.856,
+      "ramp_p99": 30.278,
+      "ramp_lag_p99": 26.153,
+      "ramp_exec_p99": 6.126,
+      "scored_exec_p99": 4.222,
+      "total_qps": 12634.57,
+      "hit_ratio": 0.9768201767263243,
+      "row": {
+        "phase": "phase1",
+        "scale": "10M",
+        "workload": "mixed-8020",
+        "run_type": "confirm",
+        "target_rate": 12643,
+        "total_qps": "12634.570",
+        "read_qps": "11364.900",
+        "write_qps": "1269.670",
+        "p50": "0.422",
+        "p95": "1.875",
+        "p99": "5.856",
+        "error_rate": "0.000000",
+        "pass_fail": "pass",
+        "avg_cpu": "52.152",
+        "avg_iowait": "11.652",
+        "avg_steal": "0.000",
+        "cache_hit_ratio": "0.976820",
+        "invalid": "no",
+        "run_id": "10m-v2-confirm-r12643-3",
+        "loadgen_cpu": "8.869",
+        "notes": "loadgen_core_max 17.83; pgbench_thread_max 7.75; ramp_30s_p99 30.278 ramp_lag_p99 26.153 ramp_exec_p99 6.126 ramp_fail 0; disk_util 55.10 await_ms 0.7511538511621663"
+      }
+    }
+  ],
+  "end_db_bytes": 6912620223,
+  "end_wal_bytes": 7432306688,
+  "end_counts": "users|1000000\nposts|11036344\nlikes|24149466"
+}

@@ -1,0 +1,10 @@
+before
+max=19 tied=3
+984865 like_count=19 likes_rows=19
+972182 like_count=19 likes_rows=19
+817098 like_count=19 likes_rows=19
+after
+max=20 tied=2
+974260 like_count=20 likes_rows=20
+972182 like_count=20 likes_rows=20
+984865 like_count=19 likes_rows=19

@@ -1,0 +1,45 @@
+{
+  "row": {
+    "phase": "phase1",
+    "scale": "1M",
+    "workload": "mixed",
+    "run_type": "search",
+    "target_rate": 624,
+    "total_qps": "627.230",
+    "read_qps": "564.841",
+    "write_qps": "62.389",
+    "p50": "3.556",
+    "p95": "105.335",
+    "p99": "279.104",
+    "error_rate": "0.000000",
+    "pass_fail": "fail",
+    "avg_cpu": "82.833",
+    "avg_iowait": "0.000",
+    "avg_steal": "0.500",
+    "cache_hit_ratio": "1.000000",
+    "invalid": "no",
+    "run_id": "1m-mixed-search-03",
+    "loadgen_cpu": "0.558",
+    "notes": "disk_util 2.54 await_ms 0.4033333333333333"
+  },
+  "passed": false,
+  "invalid": false,
+  "rate": 624,
+  "total_qps": 627.23032,
+  "io": {
+    "util": 2.535833333333333,
+    "await_ms": 0.4033333333333333,
+    "samples": 24
+  },
+  "vm": {
+    "cpu": 82.83333333333333,
+    "iowait": 0.0,
+    "steal": 0.5,
+    "samples": 24
+  },
+  "hit_ratio": 0.9999997036069577,
+  "p95": 105.335,
+  "p99": 279.104,
+  "error_rate": 0.0,
+  "summary_tail": " - number of transactions actually processed: 33668 (tps = 280.931095)\n - number of failed transactions: 0 (0.000%)\n - latency average = 4.727 ms\n - latency stddev = 18.007 ms\nSQL script 2: /opt/pg-limit/sql/open_post.sql\n - weight: 45 (targets 45.0% of total)\n - 34008 transactions (45.2% of total)\n - number of transactions actually processed: 34008 (tps = 283.768109)\n - number of failed transactions: 0 (0.000%)\n - latency average = 37.616 ms\n - latency stddev = 56.792 ms\nSQL script 3: /opt/pg-limit/sql/like.sql\n - weight: 8 (targets 8.0% of total)\n - 6000 transactions (8.0% of total)\n - number of transactions actually processed: 6000 (tps = 50.064945)\n - number of failed transactions: 0 (0.000%)\n - latency average = 6.794 ms\n - latency stddev = 19.207 ms\nSQL script 4: /opt/pg-limit/sql/new_post.sql\n - weight: 2 (targets 2.0% of total)\n - 1477 transactions (2.0% of total)\n - number of transactions actually processed: 1477 (tps = 12.324321)\n - number of failed transactions: 0 (0.000%)\n - latency average = 7.369 ms\n - latency stddev = 19.042 ms"
+}

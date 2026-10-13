@@ -1,0 +1,10 @@
+before
+max=7 tied=16
+99640102 like_count=7 likes_rows=7
+99344198 like_count=7 likes_rows=7
+99035091 like_count=7 likes_rows=7
+after
+max=7 tied=20
+99640102 like_count=7 likes_rows=7
+99344198 like_count=7 likes_rows=7
+99035091 like_count=7 likes_rows=7

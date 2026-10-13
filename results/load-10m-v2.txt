@@ -1,0 +1,70 @@
+label 10m-v2
+like_count_column integer
+COPY
+users 1..1000000
+users_progress 1000000
+users_seconds 3.636
+posts 1..10000000
+posts_progress 1000000
+posts_progress 2000000
+posts_progress 3000000
+posts_progress 4000000
+posts_progress 5000000
+posts_progress 6000000
+posts_progress 7000000
+posts_progress 8000000
+posts_progress 9000000
+posts_progress 10000000
+posts_seconds 43.284
+likes for posts 1..10000000
+likes_progress 1000000
+likes_progress 2000000
+likes_progress 3000000
+likes_progress 4000000
+likes_progress 5000000
+likes_progress 6000000
+likes_progress 7000000
+likes_progress 8000000
+likes_progress 9000000
+likes_progress 10000000
+likes_seconds 41.506
+load_done
+BACKFILL
+Timing is on.
+SET
+Time: 1.268 ms
+UPDATE 10000000
+Time: 61962.011 ms (01:01.962)
+INDEX
+Timing is on.
+ALTER TABLE
+Time: 1645.487 ms (00:01.645)
+ALTER TABLE
+Time: 9858.164 ms (00:09.858)
+ALTER TABLE
+Time: 16597.436 ms (00:16.597)
+CREATE INDEX
+Time: 11563.349 ms (00:11.563)
+  setval  
+----------
+ 10000000
+(1 row)
+
+Time: 16.689 ms
+VACUUM
+Time: 18916.339 ms (00:18.916)
+CHECKPOINT
+Time: 7149.907 ms (00:07.150)
+COUNTS
+users|1000000
+posts|10000000
+likes|20000000
+body_lengths 80,200
+identity_last 10000000
+SIZES
+likes,1043726336,630431744,1674469376
+posts,4173692928,540041216,4714921984
+users,60686336,22487040,83222528
+database,6480688831
+wal_bytes 7516192768
+size_vs_ram 0.754451

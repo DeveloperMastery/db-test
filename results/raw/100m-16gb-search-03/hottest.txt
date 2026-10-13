@@ -1,0 +1,10 @@
+before
+max=12 tied=1
+96237629 like_count=12 likes_rows=12
+94819350 like_count=11 likes_rows=11
+99583721 like_count=10 likes_rows=10
+after
+max=12 tied=2
+96237629 like_count=12 likes_rows=12
+94819350 like_count=12 likes_rows=12
+84833251 like_count=11 likes_rows=11

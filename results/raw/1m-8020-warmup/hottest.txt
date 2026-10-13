@@ -1,0 +1,10 @@
+before
+max=2 tied=1000000
+1000000 like_count=2 likes_rows=2
+999999 like_count=2 likes_rows=2
+999998 like_count=2 likes_rows=2
+after
+max=21 tied=1
+825988 like_count=21 likes_rows=21
+872660 like_count=20 likes_rows=20
+939172 like_count=19 likes_rows=19

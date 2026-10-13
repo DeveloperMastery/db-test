@@ -1,0 +1,257 @@
+{
+  "prefix": "100m-split",
+  "scale": "100M",
+  "workload": "mixed-8020-split",
+  "read_primary_share": 0.45,
+  "read_replica_share": 0.45,
+  "write_share": 0.1,
+  "warmup": {
+    "mode": "adaptive",
+    "elapsed_s": 618.5395051250002,
+    "stable": true,
+    "capped": false,
+    "windows": [
+      {
+        "elapsed_s": 60.0,
+        "qps": 25239.000000000004,
+        "primary_hit": null,
+        "replica_hit": null
+      },
+      {
+        "elapsed_s": 120.0,
+        "qps": 24984.1,
+        "primary_hit": 0.6944143936816854,
+        "replica_hit": 0.6077654974915726
+      },
+      {
+        "elapsed_s": 180.0,
+        "qps": 25558.100000000002,
+        "primary_hit": 0.6941940365752266,
+        "replica_hit": 0.6086431741492847
+      },
+      {
+        "elapsed_s": 240.0,
+        "qps": 26027.800000000003,
+        "primary_hit": 0.6962419203517921,
+        "replica_hit": 0.6080146859967317
+      },
+      {
+        "elapsed_s": 300.0,
+        "qps": 26156.1,
+        "primary_hit": 0.6969397936943873,
+        "replica_hit": 0.6065571759959943
+      },
+      {
+        "elapsed_s": 360.0,
+        "qps": 26298.2,
+        "primary_hit": 0.6965347208783963,
+        "replica_hit": 0.607026770303613
+      },
+      {
+        "elapsed_s": 420.0,
+        "qps": 26428.5,
+        "primary_hit": 0.6962793574724224,
+        "replica_hit": 0.607330039324625
+      },
+      {
+        "elapsed_s": 480.0,
+        "qps": 26944.1,
+        "primary_hit": 0.695310742946027,
+        "replica_hit": 0.6067748491093905
+      },
+      {
+        "elapsed_s": 540.0,
+        "qps": 27119.699999999997,
+        "primary_hit": 0.6968470112974429,
+        "replica_hit": 0.6070753818092723
+      },
+      {
+        "elapsed_s": 600.0,
+        "qps": 27039.9,
+        "primary_hit": 0.6963241456611079,
+        "replica_hit": 0.6064205160567303
+      }
+    ]
+  },
+  "ceiling_qps": 23850.783333333333,
+  "ceiling": {
+    "phase": "phase3",
+    "scale": "100M",
+    "workload": "mixed-8020-split",
+    "run_type": "ceiling",
+    "target_rate": "",
+    "total_qps": "23850.783",
+    "read_qps": "22068.467",
+    "write_qps": "1782.317",
+    "p50": "3.659",
+    "p95": "24.349",
+    "p99": "41.405",
+    "error_rate": "0.000000",
+    "pass_fail": "pass",
+    "avg_cpu": "90.583",
+    "avg_iowait": "4.125",
+    "avg_steal": "0.000",
+    "cache_hit_ratio": "0.604739",
+    "invalid": "no",
+    "run_id": "100m-split-ceiling",
+    "loadgen_cpu": "15.013",
+    "notes": "read_primary_rate None; read_replica_rate None; write_rate None; clients 50+50+50; jobs 8+8+8; replay_lag_median_s 6.095 replay_lag_max_s 19.427 write_lag_max_s 0.014 flush_lag_max_s 0.018 lag_n 23; loadgen_core_max 26.85; pgbench_thread_max 8.53; exec_p99 41.405; primary_disk_util 54.15; replica_disk_util 54.08; primary_hit 0.697900; replica_hit 0.604739; primary_cpu 90.58 primary_iowait 4.12; replica_cpu 89.29 replica_iowait 0.21"
+  },
+  "confirmed_rate": 15651,
+  "attempts": [
+    {
+      "rate": 15651,
+      "passed": true,
+      "rows": [
+        {
+          "phase": "phase3",
+          "scale": "100M",
+          "workload": "mixed-8020-split",
+          "run_type": "confirm",
+          "target_rate": 15651,
+          "total_qps": "15640.927",
+          "read_qps": "14078.500",
+          "write_qps": "1562.427",
+          "p50": "1.358",
+          "p95": "21.900",
+          "p99": "62.222",
+          "error_rate": "0.000000",
+          "pass_fail": "pass",
+          "avg_cpu": "81.985",
+          "avg_iowait": "14.561",
+          "avg_steal": "0.621",
+          "cache_hit_ratio": "0.595826",
+          "invalid": "no",
+          "run_id": "100m-split-confirm-r15651-1",
+          "loadgen_cpu": "12.883",
+          "notes": "read_primary_rate 7043; read_replica_rate 7043; write_rate 1565; clients 50+50+50; jobs 8+8+8; replay_lag_median_s 0.003 replay_lag_max_s 0.036 write_lag_max_s 0.008 flush_lag_max_s 0.008 lag_n 64; loadgen_core_max 22.46; pgbench_thread_max 5.02; exec_p99 30.308; ramp_30s_p99 125.655 ramp_exec_p99 35.142; primary_disk_util 56.26; replica_disk_util 52.56; primary_hit 0.688076; replica_hit 0.595826; primary_cpu 81.98 primary_iowait 14.56; replica_cpu 52.45 replica_iowait 12.62"
+        },
+        {
+          "phase": "phase3",
+          "scale": "100M",
+          "workload": "mixed-8020-split",
+          "run_type": "confirm",
+          "target_rate": 15651,
+          "total_qps": "15644.940",
+          "read_qps": "14081.187",
+          "write_qps": "1563.753",
+          "p50": "1.520",
+          "p95": "64.110",
+          "p99": "376.903",
+          "error_rate": "0.000000",
+          "pass_fail": "pass",
+          "avg_cpu": "85.985",
+          "avg_iowait": "10.879",
+          "avg_steal": "0.500",
+          "cache_hit_ratio": "0.594255",
+          "invalid": "no",
+          "run_id": "100m-split-confirm-r15651-2",
+          "loadgen_cpu": "12.101",
+          "notes": "read_primary_rate 7043; read_replica_rate 7043; write_rate 1565; clients 50+50+50; jobs 8+8+8; replay_lag_median_s 0.003 replay_lag_max_s 0.018 write_lag_max_s 0.018 flush_lag_max_s 0.018 lag_n 63; loadgen_core_max 21.41; pgbench_thread_max 4.67; exec_p99 35.736; ramp_30s_p99 83.839 ramp_exec_p99 30.063; primary_disk_util 55.60; replica_disk_util 52.47; primary_hit 0.686774; replica_hit 0.594255; primary_cpu 85.98 primary_iowait 10.88; replica_cpu 52.17 replica_iowait 12.74"
+        },
+        {
+          "phase": "phase3",
+          "scale": "100M",
+          "workload": "mixed-8020-split",
+          "run_type": "confirm",
+          "target_rate": 15651,
+          "total_qps": "15645.443",
+          "read_qps": "14081.100",
+          "write_qps": "1564.343",
+          "p50": "1.272",
+          "p95": "23.106",
+          "p99": "67.051",
+          "error_rate": "0.000000",
+          "pass_fail": "pass",
+          "avg_cpu": "82.576",
+          "avg_iowait": "13.712",
+          "avg_steal": "0.000",
+          "cache_hit_ratio": "0.593216",
+          "invalid": "no",
+          "run_id": "100m-split-confirm-r15651-3",
+          "loadgen_cpu": "13.139",
+          "notes": "read_primary_rate 7043; read_replica_rate 7043; write_rate 1565; clients 50+50+50; jobs 8+8+8; replay_lag_median_s 0.002 replay_lag_max_s 0.008 write_lag_max_s 0.007 flush_lag_max_s 0.007 lag_n 64; loadgen_core_max 23.10; pgbench_thread_max 5.09; exec_p99 30.043; ramp_30s_p99 204.366 ramp_exec_p99 35.578; primary_disk_util 55.76; replica_disk_util 52.55; primary_hit 0.685641; replica_hit 0.593216; primary_cpu 82.58 primary_iowait 13.71; replica_cpu 51.21 replica_iowait 11.77"
+        }
+      ],
+      "lags": [
+        {
+          "n": 64,
+          "replay_median": 0.002691,
+          "replay_max": 0.036446,
+          "write_max": 0.007894,
+          "flush_max": 0.007904
+        },
+        {
+          "n": 63,
+          "replay_median": 0.003166,
+          "replay_max": 0.018412,
+          "write_max": 0.018391,
+          "flush_max": 0.018399
+        },
+        {
+          "n": 64,
+          "replay_median": 0.0020625,
+          "replay_max": 0.00837,
+          "write_max": 0.006673,
+          "flush_max": 0.006681
+        }
+      ],
+      "primary_hits": [
+        0.6880763618165736,
+        0.6867743633828373,
+        0.6856411675140427
+      ]
+    }
+  ],
+  "search_failures": [
+    {
+      "phase": "phase3",
+      "scale": "100M",
+      "workload": "mixed-8020-split",
+      "run_type": "search",
+      "target_rate": 17887,
+      "total_qps": "17793.125",
+      "read_qps": "15978.550",
+      "write_qps": "1814.575",
+      "p50": "8.609",
+      "p95": "3712.935",
+      "p99": "4060.144",
+      "error_rate": "0.000000",
+      "pass_fail": "fail",
+      "avg_cpu": "91.103",
+      "avg_iowait": "6.345",
+      "avg_steal": "0.000",
+      "cache_hit_ratio": "0.598855",
+      "invalid": "no",
+      "run_id": "100m-split-search-02",
+      "loadgen_cpu": "12.916",
+      "notes": "read_primary_rate 8049; read_replica_rate 8049; write_rate 1789; clients 50+50+50; jobs 8+8+8; replay_lag_median_s 0.003 replay_lag_max_s 0.009 write_lag_max_s 0.006 flush_lag_max_s 0.006 lag_n 28; loadgen_core_max 23.98; pgbench_thread_max 5.38; exec_p99 38.026; ramp_30s_p99 2145.311 ramp_exec_p99 40.924; primary_disk_util 56.19; replica_disk_util 52.47; primary_hit 0.691471; replica_hit 0.598855; primary_cpu 91.10 primary_iowait 6.34; replica_cpu 53.00 replica_iowait 11.43"
+    },
+    {
+      "phase": "phase3",
+      "scale": "100M",
+      "workload": "mixed-8020-split",
+      "run_type": "search",
+      "target_rate": 16396,
+      "total_qps": "16275.392",
+      "read_qps": "14640.050",
+      "write_qps": "1635.342",
+      "p50": "2.446",
+      "p95": "2704.073",
+      "p99": "5704.418",
+      "error_rate": "0.000000",
+      "pass_fail": "fail",
+      "avg_cpu": "90.862",
+      "avg_iowait": "6.862",
+      "avg_steal": "0.000",
+      "cache_hit_ratio": "0.597875",
+      "invalid": "no",
+      "run_id": "100m-split-search-04",
+      "loadgen_cpu": "12.290",
+      "notes": "read_primary_rate 7378; read_replica_rate 7378; write_rate 1640; clients 50+50+50; jobs 8+8+8; replay_lag_median_s 0.003 replay_lag_max_s 0.025 write_lag_max_s 0.025 flush_lag_max_s 0.025 lag_n 28; loadgen_core_max 21.62; pgbench_thread_max 5.12; exec_p99 41.911; ramp_30s_p99 229.643 ramp_exec_p99 33.463; primary_disk_util 55.38; replica_disk_util 49.05; primary_hit 0.690277; replica_hit 0.597875; primary_cpu 90.86 primary_iowait 6.86; replica_cpu 50.43 replica_iowait 10.73"
+    }
+  ],
+  "stopped_reason": null,
+  "end_db_bytes": 68269061823,
+  "end_wal_bytes": 6257901568
+}

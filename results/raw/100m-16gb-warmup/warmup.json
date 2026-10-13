@@ -1,0 +1,82 @@
+{
+  "mode": "adaptive",
+  "elapsed_s": 623.719942791,
+  "stable": true,
+  "capped": false,
+  "qps_span_limit": 0.05,
+  "hit_span_limit": 0.005,
+  "min_s": 600,
+  "max_s": 2400,
+  "windows": [
+    {
+      "elapsed_s": 60.0,
+      "qps": 30961.6,
+      "avg_latency_ms": 1.609,
+      "failed": 0,
+      "hit_ratio": 0.777249238323369
+    },
+    {
+      "elapsed_s": 120.0,
+      "qps": 33263.0,
+      "avg_latency_ms": 1.501,
+      "failed": 0,
+      "hit_ratio": 0.7862987934776315
+    },
+    {
+      "elapsed_s": 180.0,
+      "qps": 34386.4,
+      "avg_latency_ms": 1.452,
+      "failed": 0,
+      "hit_ratio": 0.7852050262145733
+    },
+    {
+      "elapsed_s": 240.0,
+      "qps": 35170.0,
+      "avg_latency_ms": 1.42,
+      "failed": 0,
+      "hit_ratio": 0.7844628419371571
+    },
+    {
+      "elapsed_s": 300.0,
+      "qps": 35863.1,
+      "avg_latency_ms": 1.392,
+      "failed": 0,
+      "hit_ratio": 0.7838015669048147
+    },
+    {
+      "elapsed_s": 360.0,
+      "qps": 36667.8,
+      "avg_latency_ms": 1.362,
+      "failed": 0,
+      "hit_ratio": 0.7831023262187639
+    },
+    {
+      "elapsed_s": 420.0,
+      "qps": 37168.0,
+      "avg_latency_ms": 1.343,
+      "failed": 0,
+      "hit_ratio": 0.7826336275505994
+    },
+    {
+      "elapsed_s": 480.0,
+      "qps": 33799.2,
+      "avg_latency_ms": 1.477,
+      "failed": 0,
+      "hit_ratio": 0.7822959793594831
+    },
+    {
+      "elapsed_s": 540.0,
+      "qps": 32916.2,
+      "avg_latency_ms": 1.517,
+      "failed": 0,
+      "hit_ratio": 0.7815525944769935
+    },
+    {
+      "elapsed_s": 600.0,
+      "qps": 34350.7,
+      "avg_latency_ms": 1.454,
+      "failed": 0,
+      "hit_ratio": 0.7813302942768756
+    }
+  ]
+}

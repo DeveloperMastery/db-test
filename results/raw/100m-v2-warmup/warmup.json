@@ -1,0 +1,96 @@
+{
+  "mode": "adaptive",
+  "elapsed_s": 742.231788666,
+  "stable": true,
+  "capped": false,
+  "qps_span_limit": 0.05,
+  "hit_span_limit": 0.005,
+  "min_s": 600,
+  "max_s": 2400,
+  "windows": [
+    {
+      "elapsed_s": 60.0,
+      "qps": 11456.7,
+      "avg_latency_ms": 4.349,
+      "failed": 0,
+      "hit_ratio": 0.781109643755469
+    },
+    {
+      "elapsed_s": 120.0,
+      "qps": 11887.2,
+      "avg_latency_ms": 4.203,
+      "failed": 0,
+      "hit_ratio": 0.7880826250509525
+    },
+    {
+      "elapsed_s": 180.0,
+      "qps": 12023.7,
+      "avg_latency_ms": 4.16,
+      "failed": 0,
+      "hit_ratio": 0.7862416692268647
+    },
+    {
+      "elapsed_s": 240.0,
+      "qps": 12232.2,
+      "avg_latency_ms": 4.087,
+      "failed": 0,
+      "hit_ratio": 0.7844205569929389
+    },
+    {
+      "elapsed_s": 300.0,
+      "qps": 12262.5,
+      "avg_latency_ms": 4.077,
+      "failed": 0,
+      "hit_ratio": 0.7828945452594795
+    },
+    {
+      "elapsed_s": 360.0,
+      "qps": 12552.8,
+      "avg_latency_ms": 3.982,
+      "failed": 0,
+      "hit_ratio": 0.7811143792853528
+    },
+    {
+      "elapsed_s": 420.0,
+      "qps": 13186.5,
+      "avg_latency_ms": 3.79,
+      "failed": 0,
+      "hit_ratio": 0.7794414743168732
+    },
+    {
+      "elapsed_s": 480.0,
+      "qps": 12489.7,
+      "avg_latency_ms": 4.002,
+      "failed": 0,
+      "hit_ratio": 0.7779820469760664
+    },
+    {
+      "elapsed_s": 540.0,
+      "qps": 12507.2,
+      "avg_latency_ms": 3.997,
+      "failed": 0,
+      "hit_ratio": 0.7775296491733443
+    },
+    {
+      "elapsed_s": 600.0,
+      "qps": 13366.9,
+      "avg_latency_ms": 3.739,
+      "failed": 0,
+      "hit_ratio": 0.7747709180384309
+    },
+    {
+      "elapsed_s": 660.0,
+      "qps": 13633.6,
+      "avg_latency_ms": 3.667,
+      "failed": 0,
+      "hit_ratio": 0.7744808576152101
+    },
+    {
+      "elapsed_s": 720.0,
+      "qps": 13308.2,
+      "avg_latency_ms": 3.756,
+      "failed": 0,
+      "hit_ratio": 0.7729541845116203
+    }
+  ]
+}

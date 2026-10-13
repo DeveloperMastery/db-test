@@ -1,0 +1,51 @@
+label 1m-ramp
+like_count_column integer
+COPY
+users 1..100000
+users_seconds 0.508
+posts 1..1000000
+posts_progress 1000000
+posts_seconds 4.673
+likes for posts 1..1000000
+likes_progress 1000000
+likes_seconds 4.248
+load_done
+BACKFILL
+Timing is on.
+SET
+Time: 0.584 ms
+UPDATE 1000000
+Time: 3713.205 ms (00:03.713)
+INDEX
+Timing is on.
+ALTER TABLE
+Time: 171.656 ms
+ALTER TABLE
+Time: 1330.675 ms (00:01.331)
+ALTER TABLE
+Time: 2300.409 ms (00:02.300)
+CREATE INDEX
+Time: 1375.625 ms (00:01.376)
+ setval  
+---------
+ 1000000
+(1 row)
+
+Time: 2.424 ms
+VACUUM
+Time: 907.426 ms
+CHECKPOINT
+Time: 916.196 ms
+COUNTS
+users|100000
+likes|2000000
+posts|1000000
+body_lengths 80,200
+identity_last 1000000
+SIZES
+likes,104726528,63062016,167845888
+posts,417374208,54050816,471572480
+users,6160384,2260992,8462336
+database,655972031
+wal_bytes 1358954496
+size_vs_ram 0.076365
